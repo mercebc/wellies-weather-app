@@ -1,0 +1,7 @@
+defmodule WelliesWeb.PageController do
+  use WelliesWeb, :controller
+
+  def index(conn, _params) do
+    render(conn, "index.html")
+  end
+end
