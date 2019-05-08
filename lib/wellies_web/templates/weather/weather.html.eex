@@ -1,3 +1,3 @@
 <section class="phx-hero">
-  <h1>Weather in <%= @content %></h1>
+  <h1>Weather in London is <%= temperature(@conn) %> degrees</h1>
 </section>

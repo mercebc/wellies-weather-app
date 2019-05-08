@@ -2,13 +2,14 @@ defmodule WelliesWeb.WeatherControllerTest do
   use WelliesWeb.ConnCase
   import WelliesWeb.WeatherController
 
-  # test "GET /weather/328328", %{conn: conn} do
-  #   conn = get(conn, "/weather/328328")
-  #   assert html_response(conn, 200) =~ "Weather in London"
-  # end
+  test "GET weather in London", %{conn: conn} do
+    conn = get(conn, "/weather/2643743")
+    assert html_response(conn, 200) =~ "Weather in London"
+  end
 
   test "request 12h weather in london and get success response" do
-     response = request_12h_weather_in(328328)
+     london_id = 2643743
+     response = request_12h_weather_in(london_id)
      response = elem(response, 1)
      status_line = elem(response, 0)
      assert status_line == {'HTTP/1.1', 200, 'OK'}
@@ -20,10 +21,10 @@ defmodule WelliesWeb.WeatherControllerTest do
     assert url == 'http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/328328?apikey=1234'
   end
 
-  test "request 12h weather in london and get temperature" do
-     response = request_12h_weather_in(328328)
-     body = get_body(response)
-     assert body == {'http/1.1', 200, 'ok'}
+  test "gets the current temperature" do
+     london_id = 2643743
+     body = %{ "list" => [%{"main" => %{"temp" => 13.48}, "other" => 3},%{}] }
+     assert get_temperature(body)  == 13.48
   end
 
 end
