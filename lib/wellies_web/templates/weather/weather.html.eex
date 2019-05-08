@@ -1,3 +1,3 @@
 <section class="phx-hero">
-  <h1>Weather in <%= @location %></h1>
+  <h1>Weather in <%= @content %></h1>
 </section>
