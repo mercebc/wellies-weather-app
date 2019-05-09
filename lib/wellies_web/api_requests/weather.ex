@@ -7,6 +7,13 @@ defmodule WelliesWeb.WeatherApiRequest do
     :httpc.request(:get, {url, []}, [], [])
   end
 
+  def next_5_days_in(id) do
+    Application.ensure_all_started(:inets)
+    Application.ensure_all_started(:ssl)
+    url = url_builder("https://api.openweathermap.org/data/2.5/", "forecast", "", "id=#{id}&units=metric&appid=#{api_key()}")
+    :httpc.request(:get, {url, []}, [], [])
+  end
+
   def url_builder(domain, path, id, qparams) do
     url = Enum.join([domain, path, id, "?", qparams], "")
     String.to_charlist(url)
