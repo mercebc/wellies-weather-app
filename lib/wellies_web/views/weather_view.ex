@@ -3,7 +3,7 @@ defmodule WelliesWeb.WeatherView do
 
   def temperature(conn) do
     case conn.assigns[:temperature] do
-      nil -> "NOINDEX,NOFOLLOW"
+      nil -> "noindex,nofollow"
       temperature -> temperature
     end
   end
