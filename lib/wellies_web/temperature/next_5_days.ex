@@ -1,39 +1,38 @@
+defmodule Forecast do
+  defstruct [:date, :max_temp, :min_temp]
+end
+
 defmodule WelliesWeb.FiveDaysTemperature do
-
   alias WelliesWeb.ResponseHandler
-  alias WelliesWeb.WeatherApiRequest
+  alias WelliesWeb.OpenWeatherParser
+  alias WelliesWeb.OpenWeatherApi
 
-  defstruct [:max_temp, :min_temp, :date]
-
-  def request_five_days_forecast(id) do
+  def request_5d_forecast(id) do
     id
-    |> WeatherApiRequest.next_5_days_in()
+    |> OpenWeatherApi.next_5_days_in()
     |> ResponseHandler.get_body()
-    |> get_five_days_high_low_temperature()
+    |> get_5d_high_low_temperatures()
   end
 
-  def get_five_days_high_low_temperature(body) do
-    body["list"]
-    |> clean_date_field()
-    |> group_by_date()
-    |> highest_and_lowest_temperature()
+  defp get_5d_high_low_temperatures(body) do
+    body
+    |> OpenWeatherParser.temperatures_grouped_by_date()
+    |> create_forecast()
   end
 
-  def clean_date_field(element), do: Enum.map(element, fn x -> update_date(x) end)
+  defp create_forecast(list), do: Enum.map(list, fn {date, element} -> new(date, element) end)
 
-  def update_date(element), do: Map.update!(element, "dt_txt", fn x -> get_short_date(x) end)
-
-  def get_short_date(date) do
-    date
-    |> String.split
-    |> List.first
+  defp new(date, element) do
+    %Forecast{
+      date: date,
+      max_temp: get_temperature(element, &(Enum.max_by/2)),
+      min_temp: get_temperature(element, &(Enum.min_by/2))
+    }
   end
 
-  def group_by_date(element), do: Enum.group_by(element, fn x -> x["dt_txt"] end)
-
-  def highest_and_lowest_temperature(element), do: Enum.map(element, fn {k, v} -> {k, get_lowest_temperature(v), get_highest_temperature(v)} end)
-
-  def get_lowest_temperature(element), do: Enum.min_by(element, fn x -> x["main"]["temp"] end)["main"]["temp"]
-
-  def get_highest_temperature(element), do: Enum.max_by(element, fn x -> x["main"]["temp"] end)["main"]["temp"]
+  defp get_temperature(list, strategy) do
+    list
+    |> strategy.(fn element -> OpenWeatherParser.temperature_field(element) end)
+    |> OpenWeatherParser.temperature_field()
+  end
 end
