@@ -1,13 +1,10 @@
 defmodule WelliesWeb.OpenWeatherApi do
   @api_host_url "https://api.openweathermap.org/data/2.5/"
   @httpClient Application.get_env(:wellies, :httpClient)
-
-  def api_key do
-    Application.get_env(:wellies, :api_key)
-  end
+  @api_key Application.get_env(:wellies, :api_key)
 
   def build_url(id, endpoint) do
-    ~s(#{@api_host_url}#{endpoint}?id=#{id}&units=metric&appid=#{api_key})
+    ~s(#{@api_host_url}#{endpoint}?id=#{id}&units=metric&appid=#{@api_key})
     |> String.to_charlist
   end
 
