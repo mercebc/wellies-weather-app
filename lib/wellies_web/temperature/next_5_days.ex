@@ -7,18 +7,18 @@ defmodule WelliesWeb.FiveDaysTemperature do
   alias WelliesWeb.OpenWeatherParser
   alias WelliesWeb.OpenWeatherApi
 
-  def request_5d_forecast(city) do
+  def request_five_days_forecast(city) do
     city
-    |> parse_city
-    |> OpenWeatherApi.next_5_days_in()
-    |> ResponseHandler.get_body()
-    |> get_5d_high_low_temperatures()
+    |> ResponseHandler.parse_city
+    |> OpenWeatherApi.next_five_days_in()
+    |> ResponseHandler.validate_response
+    |> ResponseHandler.format_body(&(get_temperatures/1))
   end
 
-  defp get_5d_high_low_temperatures(body) do
+  def get_temperatures(body) do
     body
     |> OpenWeatherParser.temperatures_grouped_by_date()
-    |> create_forecast()
+    |> create_forecast
   end
 
   defp create_forecast(list), do: Enum.map(list, fn {date, element} -> new(date, element) end)

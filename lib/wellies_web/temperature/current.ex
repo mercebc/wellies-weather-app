@@ -9,13 +9,13 @@ defmodule WelliesWeb.CurrentTemperature do
 
   def request_current_forecast(city) do
     city
-    |> parse_city
+    |> ResponseHandler.parse_city
     |> OpenWeatherApi.hourly_in()
-    |> ResponseHandler.get_body()
-    |> get_temperature
+    |> ResponseHandler.validate_response
+    |> ResponseHandler.format_body(&(get_temperature/1))
   end
 
-  defp get_temperature(body) do
+  def get_temperature(body) do
     body
     |> OpenWeatherParser.get_current_forecast()
     |> new_forecast
@@ -29,8 +29,4 @@ defmodule WelliesWeb.CurrentTemperature do
     }
   end
 
-  defp parse_city(city) do
-    city
-    |> String.replace(" ", "+")
-  end
 end
