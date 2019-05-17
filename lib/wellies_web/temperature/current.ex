@@ -7,17 +7,18 @@ defmodule WelliesWeb.CurrentTemperature do
   alias WelliesWeb.OpenWeatherParser
   alias WelliesWeb.OpenWeatherApi
 
-  def request_current_forecast(id) do
-    id
-    |> OpenWeatherApi.hourly_in
-    |> ResponseHandler.get_body
+  def request_current_forecast(city) do
+    city
+    |> parse_city
+    |> OpenWeatherApi.hourly_in()
+    |> ResponseHandler.get_body()
     |> get_temperature
   end
 
   defp get_temperature(body) do
-     body
-     |> OpenWeatherParser.get_current_forecast
-     |> new_forecast
+    body
+    |> OpenWeatherParser.get_current_forecast()
+    |> new_forecast
   end
 
   defp new_forecast(element) do
@@ -28,4 +29,8 @@ defmodule WelliesWeb.CurrentTemperature do
     }
   end
 
+  defp parse_city(city) do
+    city
+    |> String.replace(" ", "+")
+  end
 end

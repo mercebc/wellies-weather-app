@@ -1,9 +1,8 @@
 defmodule WelliesWeb.OpenWeatherParser do
-
   def get_current_forecast(body) do
-     body
-     |> get_weather_list()
-     |> List.first()
+    body
+    |> get_weather_list()
+    |> List.first()
   end
 
   def temperatures_grouped_by_date(body) do
@@ -19,7 +18,8 @@ defmodule WelliesWeb.OpenWeatherParser do
 
   defp group_by_date(element), do: Enum.group_by(element, fn x -> date_field(x) end)
 
-  defp update_date(element), do: Map.update!(element, "dt_txt", fn x -> get_date_from_datefield(x) end)
+  defp update_date(element),
+    do: Map.update!(element, "dt_txt", fn x -> get_date_from_datefield(x) end)
 
   defp date_field(element), do: Map.get(element, "dt_txt")
 
@@ -27,8 +27,8 @@ defmodule WelliesWeb.OpenWeatherParser do
 
   defp get_date_from_datefield(datefield) do
     datefield
-    |> String.split
-    |> List.first
+    |> String.split()
+    |> List.first()
   end
 
   def get_date(element) do
@@ -40,8 +40,7 @@ defmodule WelliesWeb.OpenWeatherParser do
   def get_hour(element) do
     element
     |> date_field
-    |> String.split
-    |> List.last
+    |> String.split()
+    |> List.last()
   end
-
 end

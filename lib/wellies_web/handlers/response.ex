@@ -1,5 +1,4 @@
 defmodule WelliesWeb.ResponseHandler do
-
   def get_body(response) do
     case response do
       {:ok, {{'HTTP/1.1', 200, 'OK'}, _headers, body}} ->
@@ -13,5 +12,4 @@ defmodule WelliesWeb.ResponseHandler do
         status_line
     end
   end
-
 end

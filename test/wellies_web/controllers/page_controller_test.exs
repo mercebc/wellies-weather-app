@@ -10,5 +10,4 @@ defmodule WelliesWeb.PageControllerTest do
     conn = get(conn, "/")
     assert html_response(conn, 200) =~ "id='search-text-input'"
   end
-
 end

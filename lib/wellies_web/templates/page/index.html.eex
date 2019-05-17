@@ -3,5 +3,7 @@
 </section>
 
 <section>
-  <input type='text' placeholder='Search...' id='search-text-input' />
+  <form action="/weather" method="get" enctype="text/plain">
+    <input type='text' placeholder='Search...' id='search-text-input' name='city'/>
+  </form>
 </section>

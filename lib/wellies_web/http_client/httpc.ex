@@ -1,5 +1,5 @@
 defmodule HTTPClientBehaviour do
-  @callback get(String.t) :: String.t
+  @callback get(String.t()) :: String.t()
 end
 
 defmodule WelliesWeb.HTTPClient do
