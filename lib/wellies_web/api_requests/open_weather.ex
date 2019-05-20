@@ -8,7 +8,7 @@ defmodule WelliesWeb.OpenWeatherApi do
     |> String.to_charlist()
   end
 
-  def make_request(city, endpoint) do
+  defp make_request(city, endpoint) do
     url = build_url(city, endpoint)
     @httpClient.get(url)
   end

@@ -11,7 +11,7 @@ defmodule WelliesWeb.ResponseHandlerTest do
     assert validate_response(response) == { :ok, [%{"temp" => 14.12, "temp_max" => 15.11, "temp_min" => 14.12}]}
   end
 
-  test "gets the body of the response and it validates it" do
+  test "returns error if 404 not found in response" do
     response =
       {:ok,
        {{'HTTP/1.1', 404, 'Not Found'}, [{'connection', 'keep-alive'}],

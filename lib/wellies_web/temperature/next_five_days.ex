@@ -37,8 +37,4 @@ defmodule WelliesWeb.FiveDaysTemperature do
     |> OpenWeatherParser.temperature_field()
   end
 
-  defp parse_city(city) do
-    city
-    |> String.replace(" ", "+")
-  end
 end

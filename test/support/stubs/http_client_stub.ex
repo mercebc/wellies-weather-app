@@ -1,7 +1,7 @@
 defmodule WelliesWeb.HTTPClientStub do
   @behaviour HTTPClientBehaviour
 
-  def endpoint(url) do
+  def get_endpoint(url) do
     url
     |> to_string
     |> String.split("?")
@@ -10,14 +10,35 @@ defmodule WelliesWeb.HTTPClientStub do
     |> List.last()
   end
 
-  def get(url) do
-    endpoint = endpoint(url)
+  def get_city(url) do
+    url
+    |> to_string
+    |> String.split("&units")
+    |> List.first()
+    |> String.split("q=")
+    |> List.last()
+  end
 
-    case endpoint do
+  def get(url) do
+    url
+    |> get_city
+    |> case do
+      "London" -> response(url)
+      "Paris" -> response(url)
+      "New+York" -> response(url)
+      _ -> not_found()
+    end
+  end
+
+  def response(url) do
+    url
+    |> get_endpoint
+    |> case do
       "/forecast/hourly" -> response_hourly()
       "/forecast" -> response_5d()
     end
   end
+
 
   def response_hourly do
     {:ok,
@@ -47,4 +68,10 @@ defmodule WelliesWeb.HTTPClientStub do
         {"main":{"temp":24.06},"weather":[{"description":"clear sky","icon":"01d"}],"dt_txt":"2019-05-20 15:00:00"}
         ]}'}}
   end
+
+  def not_found do
+    {:ok, {{'HTTP/1.1', 404, 'Not Found'}, [{'connection', 'keep-alive'}],
+      'City not found'}}
+  end
+
 end
