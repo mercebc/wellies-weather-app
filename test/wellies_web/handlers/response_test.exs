@@ -8,16 +8,15 @@ defmodule WelliesWeb.ResponseHandlerTest do
        {{'HTTP/1.1', 200, 'OK'}, [{'connection', 'keep-alive'}],
         '[{"temp":14.12,"temp_min":14.12,"temp_max":15.11}]'}}
 
-    assert validate_response(response) == { :ok, [%{"temp" => 14.12, "temp_max" => 15.11, "temp_min" => 14.12}]}
+    assert validate_response(response) ==
+             {:ok, [%{"temp" => 14.12, "temp_max" => 15.11, "temp_min" => 14.12}]}
   end
 
   test "returns error if 404 not found in response" do
     response =
-      {:ok,
-       {{'HTTP/1.1', 404, 'Not Found'}, [{'connection', 'keep-alive'}],
-        'Not found'}}
+      {:ok, {{'HTTP/1.1', 404, 'Not Found'}, [{'connection', 'keep-alive'}], 'Not found'}}
 
-    assert validate_response(response) == { :error, :city_not_found}
+    assert validate_response(response) == {:error, :city_not_found}
   end
 
   test "gets the status line of the response" do
@@ -33,5 +32,4 @@ defmodule WelliesWeb.ResponseHandlerTest do
     city = "New York"
     assert parse_city(city) == "New+York"
   end
-
 end

@@ -39,7 +39,6 @@ defmodule WelliesWeb.HTTPClientStub do
     end
   end
 
-
   def response_hourly do
     {:ok,
      {{'HTTP/1.1', 200, 'OK'}, [{'connection', 'keep-alive'}],
@@ -70,8 +69,6 @@ defmodule WelliesWeb.HTTPClientStub do
   end
 
   def not_found do
-    {:ok, {{'HTTP/1.1', 404, 'Not Found'}, [{'connection', 'keep-alive'}],
-      'City not found'}}
+    {:ok, {{'HTTP/1.1', 404, 'Not Found'}, [{'connection', 'keep-alive'}], 'City not found'}}
   end
-
 end

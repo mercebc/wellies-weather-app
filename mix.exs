@@ -49,7 +49,7 @@ defmodule Wellies.MixProject do
 
   defp test_deps do
     [
-      {:excoveralls, "~> 0.10.0", only: :test},
+      {:excoveralls, "~> 0.10.0", only: :test}
     ]
   end
 

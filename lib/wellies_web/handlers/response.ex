@@ -20,9 +20,8 @@ defmodule WelliesWeb.ResponseHandler do
 
   def format_body(response, func) do
     case response do
-      {:ok, body} -> {:ok, func.(body) }
-      {:error, _ } -> {:error, :city_not_found }
+      {:ok, body} -> {:ok, func.(body)}
+      {:error, _} -> {:error, :city_not_found}
     end
   end
-
 end
