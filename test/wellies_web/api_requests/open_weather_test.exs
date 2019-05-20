@@ -11,7 +11,7 @@ defmodule WelliesWeb.WeatherRequestApiTest do
 
   test "request 5 days weather in london and get success response" do
     london = "London"
-    response = next_5_days_in(london)
+    response = next_five_days_in(london)
     assert ResponseHandler.get_status_line(response) == {'HTTP/1.1', 200, 'OK'}
   end
 
