@@ -17,7 +17,7 @@ defmodule WelliesWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/weather/:location", WeatherController, :weather
+    get "/weather", WeatherController, :weather
   end
 
   # Other scopes may use custom stacks.

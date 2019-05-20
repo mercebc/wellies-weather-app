@@ -1,3 +1,30 @@
 <section class="phx-hero">
-  <h1>Weather in <%= @location %></h1>
+  <h1>Weather in <%= city(@conn) %> is <%= temperature(@conn) %> degrees</h1>
+  <h2> Max: <%= forecast_max_temp(@conn, 0) %> degrees</h1>
+  <h2> Min: <%= forecast_min_temp(@conn, 0) %> degrees</h1>
+</section>
+<section class="phx-hero">
+  <h1>Tomorrow, <%= forecast_date(@conn, 1) %></h1>
+  <h2> Max: <%= forecast_max_temp(@conn, 1) %> degrees</h1>
+  <h2> Min: <%= forecast_min_temp(@conn, 1) %> degrees</h1>
+</section>
+<section class="phx-hero">
+  <h2><%= forecast_date(@conn, 2) %></h2>
+  <h3> Max: <%= forecast_max_temp(@conn, 2) %> degrees</h3>
+  <h3> Min: <%= forecast_min_temp(@conn, 2) %> degrees</h3>
+</section>
+<section class="phx-hero">
+  <h2><%= forecast_date(@conn, 3) %></h2>
+  <h3> Max: <%= forecast_max_temp(@conn, 3) %> degrees</h3>
+  <h3> Min: <%= forecast_min_temp(@conn, 3) %> degrees</h3>
+</section>
+<section class="phx-hero">
+  <h2><%= forecast_date(@conn, 4) %></h2>
+  <h3> Max: <%= forecast_max_temp(@conn, 4) %> degrees</h3>
+  <h3> Min: <%= forecast_min_temp(@conn, 4) %> degrees</h3>
+</section>
+<section class="phx-hero">
+  <h2><%= forecast_date(@conn, 5) %></h2>
+  <h3> Max: <%= forecast_max_temp(@conn, 5) %> degrees</h3>
+  <h3> Min: <%= forecast_min_temp(@conn, 5) %> degrees</h3>
 </section>
