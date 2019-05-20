@@ -2,7 +2,7 @@ defmodule WelliesWeb.OpenWeatherParserTest do
   use WelliesWeb.ConnCase
   import WelliesWeb.OpenWeatherParser
 
-  test "gets current forecast" do
+  test "gets current weather grouped by hours" do
     body = %{
       "cod" => "200",
       "list" => [
@@ -20,13 +20,10 @@ defmodule WelliesWeb.OpenWeatherParserTest do
       "message" => 0.0094
     }
 
-    current_forecast = %{
-      "dt_txt" => "2019-05-15 12:00:00",
-      "main" => %{"temp" => 19.64},
-      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
-    }
+    current_weather = %{"2019-05-15 12:00:00" => [%{"dt_txt" => "2019-05-15 12:00:00", "main" => %{"temp" => 19.64}, "weather" => [%{"description" => "clear sky", "icon" => "01d"}]}], 
+      "2019-05-15 13:00:00" => [%{"dt_txt" => "2019-05-15 13:00:00", "main" => %{"temp" => 14.67}, "weather" => [%{"description" => "clear sky", "icon" => "01d"}]}]}
 
-    assert get_current_forecast(body) == current_forecast
+    assert get_hourly_weather(body) == current_weather
   end
 
   test "gets temperatures grouped by date" do

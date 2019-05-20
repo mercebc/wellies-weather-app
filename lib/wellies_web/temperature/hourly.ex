@@ -1,13 +1,13 @@
-defmodule ForecastNow do
-  defstruct [:date, :hour, :temperature]
+defmodule TodayHourly do
+  defstruct [:date, :icon, :hour, :temperature]
 end
 
-defmodule WelliesWeb.CurrentTemperature do
+defmodule WelliesWeb.HourlyTemperature do
   alias WelliesWeb.ResponseHandler
   alias WelliesWeb.OpenWeatherParser
   alias WelliesWeb.OpenWeatherApi
 
-  def request_current_forecast(city) do
+  def request_hourly_weather(city) do
     city
     |> ResponseHandler.parse_city()
     |> OpenWeatherApi.hourly_in()
@@ -17,13 +17,18 @@ defmodule WelliesWeb.CurrentTemperature do
 
   def get_temperature(body) do
     body
-    |> OpenWeatherParser.get_current_forecast()
-    |> new_forecast
+    |> OpenWeatherParser.get_hourly_weather()
+    |> create_forecast
   end
 
-  defp new_forecast(element) do
-    %ForecastNow{
+  defp create_forecast(list), do: Enum.map(list, fn {date, element} -> new(date, element) end)
+
+  defp new(date, element) do
+    element = List.first(element)
+
+    %TodayHourly{
       date: OpenWeatherParser.get_date(element),
+      icon: OpenWeatherParser.icon_url(element),
       hour: OpenWeatherParser.get_hour(element),
       temperature: OpenWeatherParser.temperature_field(element)
     }

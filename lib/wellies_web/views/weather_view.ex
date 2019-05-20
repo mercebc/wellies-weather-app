@@ -2,9 +2,16 @@ defmodule WelliesWeb.WeatherView do
   use WelliesWeb, :view
 
   def temperature(conn) do
-    case conn.assigns[:current] do
+    case conn.assigns[:hourly] do
       nil -> "noindex,nofollow"
-      current -> current.temperature
+      hourly -> Enum.at(hourly, 0).temperature
+    end
+  end
+
+  def hourly(conn) do
+    case conn.assigns[:hourly] do
+      nil -> "noindex,nofollow"
+      hourly -> hourly
     end
   end
 

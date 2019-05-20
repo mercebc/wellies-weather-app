@@ -1,8 +1,8 @@
 defmodule WelliesWeb.OpenWeatherParser do
-  def get_current_forecast(body) do
+  def get_hourly_weather(body) do
     body
     |> get_weather_list()
-    |> List.first()
+    |> group_by_date()
   end
 
   def temperatures_grouped_by_date(body) do
@@ -25,10 +25,28 @@ defmodule WelliesWeb.OpenWeatherParser do
 
   def temperature_field(element), do: element["main"]["temp"]
 
-  defp get_date_from_datefield(datefield) do
+  def icon_url(element) do
+    element
+    |> Map.get("weather")
+    |> List.first()
+    |> Map.get("icon")
+    |> build_icon_url
+  end
+
+  def build_icon_url(icon) do
+    ~s(http://openweathermap.org/img/w/#{icon}.png)
+  end
+
+  def get_date_from_datefield(datefield) do
     datefield
     |> String.split()
     |> List.first()
+  end
+
+  def get_hour_from_datefield(datefield) do
+    datefield
+    |> String.split()
+    |> List.last()
   end
 
   def get_date(element) do
@@ -40,7 +58,6 @@ defmodule WelliesWeb.OpenWeatherParser do
   def get_hour(element) do
     element
     |> date_field
-    |> String.split()
-    |> List.last()
+    |> get_hour_from_datefield
   end
 end
