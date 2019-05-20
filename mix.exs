@@ -44,12 +44,12 @@ defmodule Wellies.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"}
-    ]
+    ] ++ test_deps()
   end
 
   defp test_deps do
     [
-      {:excoveralls, "~> 0.10.0", only: :test},
+      {:excoveralls, "~> 0.10.0", only: :test}
     ]
   end
 
