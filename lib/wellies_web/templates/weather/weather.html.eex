@@ -1,29 +1,30 @@
 <section class="phx-hero">
-  <h1>Weather in <%= city(@conn) %> is <%= temperature(@conn) %> degrees</h1>
-  <h2> Max: <%= forecast_max_temp(@conn, 0) %>°</h1>
-  <h2> Min: <%= forecast_min_temp(@conn, 0) %>°</h1>
+    <h1>Weather in <%= city(@conn) %> now is <%= now_temperature(@conn) %>°</h1>
+    <p><img src="<%= now_icon(@conn) %>"></p>
+    <h2> Max: <%= now_max(@conn) %>°</h1>
+    <h2> Min: <%= now_min(@conn) %>°</h1>
 </section>
 
 
 <section class="column-small">
-    <%= for hour <- hourly(@conn) do %>
-      <section class="wellies-hero">
-        <p><%= hour.hour %></p>
-        <p><img src="<%= hour.icon %>"></p>
-        <p><%= hour.temperature %>°</p>
-        </section>
-    <% end %>
+  <%= for hour <- hourly(@conn) do %>
+    <section class="wellies-hero">
+      <p><%= hour.hour %></p>
+      <p><img src="<%= hour.icon %>"></p>
+      <p><%= hour.temperature %>°</p>
+    </section>
+  <% end %>
 </section>
 
 
 <section class="column-medium">
-<%= for day <- five_days(@conn) do %>
-  <section class="wellies-hero">
-    <h2> <%= day.date %> </h2>
-    <img src="<%= day.icon %>">
-    <h3> Max: <%= day.max_temp %>°</h3>
-    <h3> Min: <%= day.min_temp %>°</h3>
-  </section>
-<% end %>
+  <%= for day <- five_days(@conn) do %>
+    <section class="wellies-hero">
+      <h2> <%= day.date %> </h2>
+      <img src="<%= day.icon %>">
+      <h3> Max: <%= day.max_temp %>°</h3>
+      <h3> Min: <%= day.min_temp %>°</h3>
+    </section>
+  <% end %>
 </section>
 

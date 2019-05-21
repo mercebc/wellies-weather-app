@@ -26,6 +26,10 @@ defmodule WelliesWeb.OpenWeatherParser do
 
   def temperature_field(element), do: element["main"]["temp"]
 
+  def temperature_max_field(element), do: element["main"]["temp_max"]
+
+  def temperature_min_field(element), do: element["main"]["temp_min"]
+
   def icon_url(element) do
     element
     |> Map.get("weather")

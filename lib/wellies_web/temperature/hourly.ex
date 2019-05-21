@@ -12,7 +12,6 @@ defmodule WelliesWeb.HourlyTemperature do
     |> ResponseHandler.parse_city()
     |> OpenWeatherApi.hourly_in()
     |> ResponseHandler.validate_response()
-    |> IO.inspect
     |> ResponseHandler.format_body(&get_temperature/1)
   end
 
@@ -22,9 +21,9 @@ defmodule WelliesWeb.HourlyTemperature do
     |> create_forecast
   end
 
-  defp create_forecast(list), do: Enum.map(list, fn {date, element} -> new(date, element) end)
+  defp create_forecast(list), do: Enum.map(list, fn {date, element} -> new(element) end)
 
-  defp new(date, element) do
+  defp new(element) do
     element = List.first(element)
 
     %TodayHourly{

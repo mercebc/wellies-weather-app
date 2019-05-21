@@ -3,6 +3,12 @@ defmodule WelliesWeb.WeatherRequestApiTest do
   import WelliesWeb.OpenWeatherApi
   alias WelliesWeb.ResponseHandler
 
+  test "request current weather in london and get success response" do
+    london = "London"
+    response = current_in(london)
+    assert ResponseHandler.get_status_line(response) == {'HTTP/1.1', 200, 'OK'}
+  end
+
   test "request 12h weather in london and get success response" do
     london = "London"
     response = hourly_in(london)

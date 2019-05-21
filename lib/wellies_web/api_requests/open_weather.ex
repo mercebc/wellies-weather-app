@@ -15,4 +15,5 @@ defmodule WelliesWeb.OpenWeatherApi do
 
   def hourly_in(city), do: make_request(city, "/forecast/hourly")
   def next_five_days_in(city), do: make_request(city, "/forecast")
+  def current_in(city), do: make_request(city, "/weather")
 end
