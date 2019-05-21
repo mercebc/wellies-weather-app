@@ -27,3 +27,6 @@ secret_key_base =
 config :wellies, WelliesWeb.Endpoint,
   http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4000")],
   secret_key_base: secret_key_base
+
+
+config :wellies, api_key: "f72bf1113910ce1cd593a3c374e6cc7c"
