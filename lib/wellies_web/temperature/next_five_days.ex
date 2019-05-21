@@ -18,6 +18,7 @@ defmodule WelliesWeb.FiveDaysTemperature do
   def get_temperatures(body) do
     body
     |> OpenWeatherParser.temperatures_grouped_by_date()
+    |> IO.inspect
     |> create_forecast
   end
 

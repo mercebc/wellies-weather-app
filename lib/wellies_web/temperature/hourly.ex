@@ -12,6 +12,7 @@ defmodule WelliesWeb.HourlyTemperature do
     |> ResponseHandler.parse_city()
     |> OpenWeatherApi.hourly_in()
     |> ResponseHandler.validate_response()
+    |> IO.inspect
     |> ResponseHandler.format_body(&get_temperature/1)
   end
 

@@ -2,6 +2,7 @@ defmodule WelliesWeb.OpenWeatherParser do
   def get_hourly_weather(body) do
     body
     |> get_weather_list()
+    |> Enum.take(9)
     |> group_by_date()
   end
 

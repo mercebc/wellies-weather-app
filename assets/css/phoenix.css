@@ -18,7 +18,7 @@ h6{font-size: 1.4rem; letter-spacing: 0; line-height: 1.2}
 
 .container{
   margin: 0 auto;
-  max-width: 80.0rem;
+  max-width: 95.0rem;
   padding: 0 2.0rem;
   position: relative;
   width: 100%
@@ -85,6 +85,15 @@ select {
   display: block;
 }
 
+.wellies-hero {
+    text-align: center;
+    border-bottom: 1px solid #e3e3e3;
+    background: #eee;
+    border-radius: 6px;
+    padding: 1em;
+    margin-bottom: 2rem;
+}
+
 /* Headers */
 header {
   width: 100%;
@@ -120,6 +129,16 @@ header nav a {
   display: block;
 }
 
+/*columns*/
+
+.column-small {
+  column-count: 3;
+}
+
+.column-medium {
+  column-count: 1;
+}
+
 @media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */
   header section {
     flex-direction: row;
@@ -131,4 +150,10 @@ header nav a {
     flex-basis: 527px;
     margin: 2rem 1rem;
   }
+  .column-small {
+    column-count: 9;
+  }
+.column-medium {
+  column-count: 5;
+}
 }

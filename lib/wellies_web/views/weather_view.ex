@@ -18,7 +18,7 @@ defmodule WelliesWeb.WeatherView do
   def five_days(conn) do
     case conn.assigns[:five_days] do
       nil -> "noindex,nofollow"
-      five_days -> five_days
+      five_days -> List.delete_at(five_days, 0)
     end
   end
 
