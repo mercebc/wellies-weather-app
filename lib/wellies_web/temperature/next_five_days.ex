@@ -26,7 +26,7 @@ defmodule WelliesWeb.FiveDaysTemperature do
   defp new(date, element) do
     %Forecast{
       date: date,
-      icon: OpenWeatherParser.icon_url(Enum.at(element, 2)),
+      icon: OpenWeatherParser.icon_url(Enum.at(element, 0)),
       max_temp: get_temperature(element, &Enum.max_by/2),
       min_temp: get_temperature(element, &Enum.min_by/2)
     }
