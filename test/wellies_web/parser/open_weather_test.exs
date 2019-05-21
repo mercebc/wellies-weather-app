@@ -2,7 +2,7 @@ defmodule WelliesWeb.OpenWeatherParserTest do
   use WelliesWeb.ConnCase
   import WelliesWeb.OpenWeatherParser
 
-  test "gets current forecast" do
+  test "gets current weather grouped by hours" do
     body = %{
       "cod" => "200",
       "list" => [
@@ -20,13 +20,24 @@ defmodule WelliesWeb.OpenWeatherParserTest do
       "message" => 0.0094
     }
 
-    current_forecast = %{
-      "dt_txt" => "2019-05-15 12:00:00",
-      "main" => %{"temp" => 19.64},
-      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+    current_weather = %{
+      "2019-05-15 12:00:00" => [
+        %{
+          "dt_txt" => "2019-05-15 12:00:00",
+          "main" => %{"temp" => 19.64},
+          "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+        }
+      ],
+      "2019-05-15 13:00:00" => [
+        %{
+          "dt_txt" => "2019-05-15 13:00:00",
+          "main" => %{"temp" => 14.67},
+          "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+        }
+      ]
     }
 
-    assert get_current_forecast(body) == current_forecast
+    assert get_hourly_weather(body) == current_weather
   end
 
   test "gets temperatures grouped by date" do
@@ -83,15 +94,48 @@ defmodule WelliesWeb.OpenWeatherParserTest do
     assert temperatures_grouped_by_date(body) == forecast_grouped_by_date
   end
 
+  test "gets the icon url of a single forecast" do
+    single_forecast = %{
+      "dt_txt" => "2019-05-15 13:00:00",
+      "main" => %{"temp" => 14.67, "temp_max" => 23.45, "temp_min" => 12.30},
+      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+    }
+
+    url = "http://openweathermap.org/img/w/01d.png"
+    assert icon_url(single_forecast) == url
+  end
+
   test "gets the temperature of a single forecast" do
     single_forecast = %{
       "dt_txt" => "2019-05-15 13:00:00",
-      "main" => %{"temp" => 14.67},
+      "main" => %{"temp" => 14.67, "temp_max" => 23.45, "temp_min" => 12.30},
       "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
     }
 
     temperature = 14.67
     assert temperature_field(single_forecast) == temperature
+  end
+
+  test "gets the max temperature of a single forecast" do
+    single_forecast = %{
+      "dt_txt" => "2019-05-15 13:00:00",
+      "main" => %{"temp" => 14.67, "temp_max" => 23.45, "temp_min" => 12.30},
+      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+    }
+
+    temperature = 23.45
+    assert temperature_max_field(single_forecast) == temperature
+  end
+
+  test "gets the min temperature of a single forecast" do
+    single_forecast = %{
+      "dt_txt" => "2019-05-15 13:00:00",
+      "main" => %{"temp" => 14.67, "temp_max" => 23.45, "temp_min" => 12.30},
+      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+    }
+
+    temperature = 12.30
+    assert temperature_min_field(single_forecast) == temperature
   end
 
   test "gets the date of the forecast" do

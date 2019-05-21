@@ -1,5 +1,5 @@
 defmodule Forecast do
-  defstruct [:date, :max_temp, :min_temp]
+  defstruct [:date, :icon, :max_temp, :min_temp]
 end
 
 defmodule WelliesWeb.FiveDaysTemperature do
@@ -26,6 +26,7 @@ defmodule WelliesWeb.FiveDaysTemperature do
   defp new(date, element) do
     %Forecast{
       date: date,
+      icon: OpenWeatherParser.icon_url(Enum.at(element, 2)),
       max_temp: get_temperature(element, &Enum.max_by/2),
       min_temp: get_temperature(element, &Enum.min_by/2)
     }

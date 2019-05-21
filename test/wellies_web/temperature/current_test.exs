@@ -1,16 +1,11 @@
-defmodule WelliesWeb.HourlyTemperatureTest do
+defmodule WelliesWeb.CurrentTemperatureTest do
   use WelliesWeb.ConnCase
   alias WelliesWeb.CurrentTemperature
 
   test "get current temperature from mock api" do
     london = "London"
 
-    assert CurrentTemperature.request_current_forecast(london) ==
-             {:ok,
-              %ForecastNow{
-                date: "2019-05-15",
-                hour: "12:00:00",
-                temperature: 19.64
-              }}
+    assert CurrentTemperature.request_current_weather(london) ==
+    {:ok, %Current{icon: "http://openweathermap.org/img/w/01d.png", max: 18.89, min: 14.44, temperature: 16.67}}
   end
 end

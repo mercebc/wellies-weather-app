@@ -1,17 +1,24 @@
 defmodule WelliesWeb.WeatherView do
   use WelliesWeb, :view
 
-  def temperature(conn) do
+  def current(conn) do
     case conn.assigns[:current] do
       nil -> "noindex,nofollow"
-      current -> current.temperature
+      current -> current
+    end
+  end
+
+  def hourly(conn) do
+    case conn.assigns[:hourly] do
+      nil -> "noindex,nofollow"
+      hourly -> hourly
     end
   end
 
   def five_days(conn) do
     case conn.assigns[:five_days] do
       nil -> "noindex,nofollow"
-      five_days -> five_days
+      five_days -> List.delete_at(five_days, 0)
     end
   end
 
@@ -22,24 +29,31 @@ defmodule WelliesWeb.WeatherView do
     end
   end
 
-  def forecast_date(conn, day) do
-    case conn.assigns[:five_days] do
+  def now_temperature(conn) do
+    case conn.assigns[:current] do
       nil -> "noindex,nofollow"
-      five_days -> Enum.at(five_days, day).date
+      current -> current.temperature
     end
   end
 
-  def forecast_max_temp(conn, day) do
-    case conn.assigns[:five_days] do
+  def now_icon(conn) do
+    case conn.assigns[:current] do
       nil -> "noindex,nofollow"
-      five_days -> Enum.at(five_days, day).max_temp
+      current -> current.icon
     end
   end
 
-  def forecast_min_temp(conn, day) do
-    case conn.assigns[:five_days] do
+  def now_max(conn) do
+    case conn.assigns[:current] do
       nil -> "noindex,nofollow"
-      five_days -> Enum.at(five_days, day).min_temp
+      current -> current.max
+    end
+  end
+
+  def now_min(conn) do
+    case conn.assigns[:current] do
+      nil -> "noindex,nofollow"
+      current -> current.min
     end
   end
 end

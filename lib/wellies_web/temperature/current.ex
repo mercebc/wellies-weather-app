@@ -1,5 +1,5 @@
-defmodule ForecastNow do
-  defstruct [:date, :hour, :temperature]
+defmodule Current do
+  defstruct [:temperature, :icon, :max, :min]
 end
 
 defmodule WelliesWeb.CurrentTemperature do
@@ -7,25 +7,25 @@ defmodule WelliesWeb.CurrentTemperature do
   alias WelliesWeb.OpenWeatherParser
   alias WelliesWeb.OpenWeatherApi
 
-  def request_current_forecast(city) do
+  def request_current_weather(city) do
     city
     |> ResponseHandler.parse_city()
-    |> OpenWeatherApi.hourly_in()
+    |> OpenWeatherApi.current_in()
     |> ResponseHandler.validate_response()
     |> ResponseHandler.format_body(&get_temperature/1)
   end
 
   def get_temperature(body) do
     body
-    |> OpenWeatherParser.get_current_forecast()
-    |> new_forecast
+    |> create_forecast
   end
 
-  defp new_forecast(element) do
-    %ForecastNow{
-      date: OpenWeatherParser.get_date(element),
-      hour: OpenWeatherParser.get_hour(element),
-      temperature: OpenWeatherParser.temperature_field(element)
+  defp create_forecast(element) do
+    %Current{
+      temperature: OpenWeatherParser.temperature_field(element),
+      icon: OpenWeatherParser.icon_url(element),
+      max: OpenWeatherParser.temperature_max_field(element),
+      min: OpenWeatherParser.temperature_min_field(element)
     }
   end
 end
