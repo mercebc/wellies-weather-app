@@ -2,7 +2,7 @@ defmodule WelliesWeb.ResponseHandler do
   def validate_response(response) do
     case response do
       {:ok, {{'HTTP/1.1', 200, 'OK'}, _headers, body}} -> {:ok, Jason.decode!(body)}
-      {:ok, {{'HTTP/1.1', 404, 'Not Found'}, _headers, body}} -> {:error, :city_not_found}
+      {:ok, {{'HTTP/1.1', 404, 'Not Found'}, _headers, _body}} -> {:error, :city_not_found}
     end
   end
 
