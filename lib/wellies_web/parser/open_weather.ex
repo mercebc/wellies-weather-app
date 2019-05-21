@@ -38,17 +38,17 @@ defmodule WelliesWeb.OpenWeatherParser do
     |> build_icon_url
   end
 
-  def build_icon_url(icon) do
+  defp build_icon_url(icon) do
     ~s(http://openweathermap.org/img/w/#{icon}.png)
   end
 
-  def get_date_from_datefield(datefield) do
+  defp get_date_from_datefield(datefield) do
     datefield
     |> String.split()
     |> List.first()
   end
 
-  def get_hour_from_datefield(datefield) do
+  defp get_hour_from_datefield(datefield) do
     datefield
     |> String.split()
     |> List.last()

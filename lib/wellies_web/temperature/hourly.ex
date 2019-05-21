@@ -21,7 +21,7 @@ defmodule WelliesWeb.HourlyTemperature do
     |> create_forecast
   end
 
-  defp create_forecast(list), do: Enum.map(list, fn {date, element} -> new(element) end)
+  defp create_forecast(list), do: Enum.map(list, fn {_date, element} -> new(element) end)
 
   defp new(element) do
     element = List.first(element)
