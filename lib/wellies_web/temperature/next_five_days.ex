@@ -37,4 +37,5 @@ defmodule WelliesWeb.FiveDaysTemperature do
     |> strategy.(fn element -> OpenWeatherParser.temperature_field(element) end)
     |> OpenWeatherParser.temperature_field()
   end
+
 end

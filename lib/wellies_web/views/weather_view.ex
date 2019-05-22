@@ -8,13 +8,6 @@ defmodule WelliesWeb.WeatherView do
     end
   end
 
-  def hourly(conn) do
-    case conn.assigns[:hourly] do
-      nil -> "noindex,nofollow"
-      hourly -> hourly
-    end
-  end
-
   def five_days(conn) do
     case conn.assigns[:five_days] do
       nil -> "noindex,nofollow"
