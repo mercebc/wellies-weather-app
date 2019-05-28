@@ -9,7 +9,7 @@ const locations = {"message":"accurate","cod":"200","count":5,"list":
 export default function request(url) {
   return new Promise((resolve, reject) => {
     process.nextTick(() =>
-      locations.lenght > 0
+      locations.list.length > 0
         ? resolve(locations)
         : reject({
             error: 'Not found.',
