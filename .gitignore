@@ -29,6 +29,7 @@ npm-debug.log
 /assets/node_modules/
 
 # Secret configuration for prod and dev environments
+/assets/js/api_key.js
 /config/dev.secret.exs
 /config/prod.secret.exs
 

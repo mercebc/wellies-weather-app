@@ -1,9 +1,9 @@
 <section class="phx-hero">
   <p><br>Find out if you are going to need wellies in your town!<br/></p>
 </section>
+<div class='flex'>
+  <input class='margin-small' type='text' placeholder='Search...' id='city'/>
+  <button type='button' id='search'>Search</button>
+</div>
 
-<section>
-  <form action="/weather" method="get" enctype="text/plain">
-    <input type='text' placeholder='Search...' id='search-text-input' name='city'/>
-  </form>
-</section>
+<div id="result"></div>
