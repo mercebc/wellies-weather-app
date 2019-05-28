@@ -129,6 +129,11 @@ header nav a {
   display: block;
 }
 
+/*margins*/
+.margin-small {
+  margin-right: 0.5rem;
+}
+
 /*columns*/
 
 .column-small {
@@ -137,6 +142,10 @@ header nav a {
 
 .column-medium {
   column-count: 1;
+}
+
+.flex {
+  display: flex;
 }
 
 @media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */

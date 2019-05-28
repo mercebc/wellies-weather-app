@@ -5,18 +5,6 @@
     <h2> Min: <%= now_min(@conn) %>°</h1>
 </section>
 
-
-<section class="column-small">
-  <%= for hour <- hourly(@conn) do %>
-    <section class="wellies-hero">
-      <p><%= hour.hour %></p>
-      <p><img src="<%= hour.icon %>"></p>
-      <p><%= hour.temperature %>°</p>
-    </section>
-  <% end %>
-</section>
-
-
 <section class="column-medium">
   <%= for day <- five_days(@conn) do %>
     <section class="wellies-hero">
