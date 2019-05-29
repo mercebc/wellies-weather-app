@@ -148,6 +148,18 @@ header nav a {
   display: flex;
 }
 
+.item {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  background: rgb(232, 240, 254);
+  border-radius: 6px;
+  padding: 1em;
+  margin-bottom: 2rem;
+  font-weight: 200;
+  font-size: 94%;
+  list-style: none;
+}
+
 @media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */
   header section {
     flex-direction: row;

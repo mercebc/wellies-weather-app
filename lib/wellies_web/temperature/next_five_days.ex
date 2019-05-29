@@ -9,7 +9,6 @@ defmodule WelliesWeb.FiveDaysTemperature do
 
   def request_five_days_forecast(city) do
     city
-    |> ResponseHandler.parse_city()
     |> OpenWeatherApi.next_five_days_in()
     |> ResponseHandler.validate_response()
     |> ResponseHandler.format_body(&get_temperatures/1)

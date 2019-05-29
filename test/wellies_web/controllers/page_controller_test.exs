@@ -8,6 +8,6 @@ defmodule WelliesWeb.PageControllerTest do
 
   test "renders the search box", %{conn: conn} do
     conn = get(conn, "/")
-    assert html_response(conn, 200) =~ "id='search-text-input'"
+    assert html_response(conn, 200) =~ "id='search'"
   end
 end

@@ -159,4 +159,34 @@ defmodule WelliesWeb.OpenWeatherParserTest do
     hour = "13:00:00"
     assert get_hour(single_forecast) == hour
   end
+
+  test "gets the city of the forecast" do
+    single_forecast = %{
+      "name" => "Austin",
+      "sys" => %{
+        "country" => "US",
+      },
+      "dt_txt" => "2019-05-15 13:00:00",
+      "main" => %{"temp" => 14.67},
+      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+    }
+
+    city = "Austin"
+    assert city(single_forecast) == city
+  end
+
+  test "gets the country of the forecast" do
+    single_forecast = %{
+      "name" => "Austin",
+      "sys" => %{
+        "country" => "US",
+      },
+      "dt_txt" => "2019-05-15 13:00:00",
+      "main" => %{"temp" => 14.67},
+      "weather" => [%{"description" => "clear sky", "icon" => "01d"}]
+    }
+
+    country = "US"
+    assert country(single_forecast) == country
+  end
 end

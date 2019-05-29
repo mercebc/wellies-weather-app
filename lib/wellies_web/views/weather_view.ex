@@ -16,9 +16,16 @@ defmodule WelliesWeb.WeatherView do
   end
 
   def city(conn) do
-    case conn.assigns[:city] do
+    case conn.assigns[:current] do
       nil -> "noindex,nofollow"
-      city -> city
+      current -> current.city
+    end
+  end
+
+  def country(conn) do
+    case conn.assigns[:current] do
+      nil -> "noindex,nofollow"
+      current -> current.country
     end
   end
 

@@ -2,8 +2,10 @@
   <p><br>Find out if you are going to need wellies in your town!<br/></p>
 </section>
 <div class='flex'>
-  <input class='margin-small' type='text' placeholder='Search...' id='city'/>
+  <input class='margin-small' type='text' placeholder='Search...' id='city'>
   <button type='button' id='search'>Search</button>
 </div>
 
-<div id="result"></div>
+<div id="result">
+  <ul id='locationsList'></ul>
+</div>
