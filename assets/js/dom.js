@@ -1,6 +1,6 @@
 const getCity = () => document.getElementById("city").value;
 
-const clearResults = () => removeElement('locationsList');
+const clearResults = () => removeElement('resultsWrapper');
 
 const getElement = (id) => document.getElementById(id);
 
@@ -16,9 +16,22 @@ const addElement = (element, elementId, parent) => {
   return el;
 }
 
-const createList = () => {
+const wrapper = () => {
   const parent = getElement('result');
-  const ul = addElement('ul', 'locationsList', parent);
+  return addElement('div', 'resultsWrapper', parent);
+}
+
+const createAlert = (message, id) => {
+  const p = addElement('p', id, wrapper());
+  p.innerHTML = message
+}
+
+const createNotFoundMessage = () => createAlert("City not found", "notFound");
+
+const createServerErrorMessage = () => createAlert("Server is not responding, try in a few minutes", "serverError");
+
+const createList = () => {
+  const ul = addElement('ul', 'locationsList', wrapper());
 }
 
 const createEntry = (element) => {
@@ -31,4 +44,4 @@ const createEntry = (element) => {
   link.href = '/weather?id=' + element.id;
 }
 
-export { createList, createEntry, clearResults, getCity };
+export { createList, createEntry, clearResults, getCity, createNotFoundMessage, createServerErrorMessage };

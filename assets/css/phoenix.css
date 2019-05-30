@@ -147,6 +147,7 @@ header nav a {
 .flex {
   display: flex;
 }
+/*elements*/
 
 .item {
   text-align: center;
@@ -158,6 +159,24 @@ header nav a {
   font-weight: 200;
   font-size: 94%;
   list-style: none;
+}
+
+#notFound {
+  border-radius: 6px;
+  text-align: center;
+  padding: 1em;
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+#serverError {
+  border-radius: 6px;
+  text-align: center;
+  padding: 1em;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
 }
 
 @media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */

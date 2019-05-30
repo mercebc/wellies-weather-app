@@ -6,6 +6,6 @@
   <button type='button' id='search'>Search</button>
 </div>
 
-<div id="result">
-  <ul id='locationsList'></ul>
-</div>
+<section id="result">
+  <div id='resultsWrapper'></div>
+</section>
