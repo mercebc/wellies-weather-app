@@ -26,4 +26,4 @@ const render = () => {
     .then(result => renderResult(result))
 }
 
-export { getLocations, renderResult, render };
+export { render };
