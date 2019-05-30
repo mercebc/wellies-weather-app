@@ -21,8 +21,8 @@ const renderResult = (result) => {
 const render = () => {
   clearResults();
 
-  const city = getCity();
-  getLocations(city)
+  const city = getCity()
+  return getLocations(city)
     .then(result => renderResult(result))
 }
 

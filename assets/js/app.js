@@ -4,4 +4,8 @@ import "phoenix_html"
 
 import { render } from "./locations"
 
-document.getElementById("search").onclick = render;
+const search = document.getElementById("search")
+
+if (search) {
+  search.onclick = render;
+}
