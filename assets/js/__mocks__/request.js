@@ -6,14 +6,21 @@ const locations = {"message":"accurate","cod":"200","count":5,"list":
     {"id":5016884,"name":"London","coord":{"lat":43.5261,"lon":-93.0627},"main":{"temp":283.28,"pressure":1010,"humidity":81,"temp_min":282.04,"temp_max":285.15},"dt":1559037541,"wind":{"speed":3.6,"deg":350},"sys":{"country":"US"},"rain":{"1h":0.25},"snow":null,"clouds":{"all":90},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"},{"id":701,"main":"Mist","description":"mist","icon":"50n"}]}
   ]};
 
+const not_found = {"message":"accurate","cod":"200","count":0,"list":[]};
+
+const result = (url) => {
+  return (url.search("London") != -1) ? locations : not_found
+}
+
 export default function request(url) {
   return new Promise((resolve, reject) => {
     process.nextTick(() =>
       locations.list.length > 0
-        ? resolve(locations)
+        ? resolve(result(url))
         : reject({
             error: 'Not found.',
           }),
     );
   });
 }
+

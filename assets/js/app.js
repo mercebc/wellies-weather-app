@@ -2,6 +2,10 @@ import css from "../css/app.css"
 
 import "phoenix_html"
 
-import { renderLocationResults } from "./locations"
+import { render } from "./locations"
 
-document.getElementById("search").onclick = renderLocationResults;
+const search = document.getElementById("search")
+
+if (search) {
+  search.onclick = render;
+}

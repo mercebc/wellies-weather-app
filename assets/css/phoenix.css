@@ -147,6 +147,37 @@ header nav a {
 .flex {
   display: flex;
 }
+/*elements*/
+
+.item {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  background: rgb(232, 240, 254);
+  border-radius: 6px;
+  padding: 1em;
+  margin-bottom: 2rem;
+  font-weight: 200;
+  font-size: 94%;
+  list-style: none;
+}
+
+#notFound {
+  border-radius: 6px;
+  text-align: center;
+  padding: 1em;
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+#serverError {
+  border-radius: 6px;
+  text-align: center;
+  padding: 1em;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
 
 @media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */
   header section {

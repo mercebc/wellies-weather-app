@@ -4,19 +4,18 @@ defmodule WelliesWeb.WeatherController do
   alias WelliesWeb.HourlyTemperature
   alias WelliesWeb.FiveDaysTemperature
 
-  def weather(conn, %{"city" => city} = _params) do
-    with {:ok, current} <- CurrentTemperature.request_current_weather(city),
-         {:ok, five_days} <- FiveDaysTemperature.request_five_days_forecast(city)
+  def weather(conn, %{"id" => id} = _params) do
+    with {:ok, current} <- CurrentTemperature.request_current_weather(id),
+         {:ok, five_days} <- FiveDaysTemperature.request_five_days_forecast(id)
     do
-      render_weather(conn, city, current, five_days)
+      render_weather(conn, current, five_days)
     else
       {:error, _} -> render_error(conn)
     end
   end
 
-  def render_weather(conn, city, current, five_days) do
+  def render_weather(conn, current, five_days) do
     render(conn, "weather.html",
-      city: city,
       current: current,
       five_days: five_days
     )

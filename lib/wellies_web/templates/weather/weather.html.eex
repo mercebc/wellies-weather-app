@@ -1,5 +1,5 @@
 <section class="phx-hero">
-    <h1>Weather in <%= city(@conn) %> now is <%= now_temperature(@conn) %>°</h1>
+    <h1>Weather in <%= city(@conn) %>,<%= country(@conn) %> now is <%= now_temperature(@conn) %>°</h1>
     <p><img src="<%= now_icon(@conn) %>"></p>
     <h2> Max: <%= now_max(@conn) %>°</h1>
     <h2> Min: <%= now_min(@conn) %>°</h1>

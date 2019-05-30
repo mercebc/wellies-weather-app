@@ -3,8 +3,7 @@ defmodule WelliesWeb.FiveDaysTemperatureTest do
   alias WelliesWeb.FiveDaysTemperature
 
   test "gets the highest and lowest temperatures from the mock api" do
-    london = "London"
-
+    london = "012345"
     highest_lowest_temperatures =
       {:ok,
        [

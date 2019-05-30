@@ -3,16 +3,16 @@ defmodule WelliesWeb.OpenWeatherApi do
   @httpClient Application.get_env(:wellies, :httpClient)
   @api_key Application.get_env(:wellies, :api_key)
 
-  def build_url(city, endpoint) do
-    ~s(#{@api_host_url}#{endpoint}?q=#{city}&units=metric&appid=#{@api_key})
+  def build_url(id_city, endpoint) do
+    ~s(#{@api_host_url}#{endpoint}?id=#{id_city}&units=metric&appid=#{@api_key})
     |> String.to_charlist()
   end
 
-  defp make_request(city, endpoint) do
-    url = build_url(city, endpoint)
+  defp make_request(id_city, endpoint) do
+    url = build_url(id_city, endpoint)
     @httpClient.get(url)
   end
 
-  def next_five_days_in(city), do: make_request(city, "/forecast")
-  def current_in(city), do: make_request(city, "/weather")
+  def next_five_days_in(id_city), do: make_request(id_city, "/forecast")
+  def current_in(id_city), do: make_request(id_city, "/weather")
 end

@@ -65,4 +65,15 @@ defmodule WelliesWeb.OpenWeatherParser do
     |> date_field
     |> get_hour_from_datefield
   end
+
+  def city(element) do
+    element
+    |> Map.get("name")
+  end
+
+  def country(element) do
+    element
+    |> Map.get("sys")
+    |> Map.get("country")
+  end
 end
