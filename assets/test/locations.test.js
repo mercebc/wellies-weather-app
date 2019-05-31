@@ -1,6 +1,7 @@
 import { getLocations, renderResult, render} from '../js/locations';
 
 jest.mock('../js/request');
+jest.mock('../js/api_key');
 
 test('renders the page with results', (done) => {
 
