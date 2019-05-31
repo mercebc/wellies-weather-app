@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "engines": {
-    "node": ">=10.15.3"
+    "node": ">=10.3.0"
   },
   "dependencies": {
     "phoenix": "file:../deps/phoenix",
