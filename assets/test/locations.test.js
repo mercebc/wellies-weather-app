@@ -32,7 +32,8 @@ test('renders the page with results', (done) => {
     '</section>';
 
   render().then(() => {
-    expect(document.body.innerHTML).toEqual(renderedElements);
+    console.log(document);
+    return expect(document.body.innerHTML).toEqual(renderedElements);
   })
   .catch(function(error) {
     console.log(error);
@@ -63,7 +64,7 @@ test('renders the page with not found city', (done) => {
     '</section>';
 
   render().then(() => {
-    expect(document.body.innerHTML).toEqual(renderedElements);
+    return expect(document.body.innerHTML).toEqual(renderedElements);
   })
   .catch(function(error) {
     console.log(error);
