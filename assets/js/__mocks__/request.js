@@ -13,13 +13,12 @@ const result = (url) => {
 }
 
 export default function request(url) {
-  console.log("Im being called in the tests")
   return new Promise((resolve, reject) => {
       locations.list.length > 0
         ? resolve(result(url))
         : reject({
             error: 'Not found.',
-          })
+          }),
   });
 }
 
