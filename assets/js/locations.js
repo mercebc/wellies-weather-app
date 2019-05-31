@@ -24,9 +24,13 @@ const checkResultContent = (result) => {
   result.count > 0 ? renderResult(result) : renderNotFound();
 }
 
-const renderServerError = () => createServerErrorMessage();
+const renderServerError = () => {
+  console.log("Im here");
+  createServerErrorMessage();
+}
 
 const render = () => {
+  console.log(document);
   clearResults();
   const city = getCity()
 
