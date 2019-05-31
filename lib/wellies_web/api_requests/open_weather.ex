@@ -4,6 +4,8 @@ defmodule WelliesWeb.OpenWeatherApi do
   @api_key Application.get_env(:wellies, :api_key)
 
   def build_url(id_city, endpoint) do
+    @api_key
+    |>IO.inspect
     ~s(#{@api_host_url}#{endpoint}?id=#{id_city}&units=metric&appid=#{@api_key})
     |> String.to_charlist()
   end
