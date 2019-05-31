@@ -21,6 +21,7 @@ const renderResult = (result) => {
 const renderNotFound = () => createNotFoundMessage();
 
 const checkResultContent = (result) => {
+  console.log("Im also here");
   result.count > 0 ? renderResult(result) : renderNotFound();
 }
 
