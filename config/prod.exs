@@ -15,6 +15,11 @@ config :wellies, WelliesWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
+config :wellies, Wellies.Repo,
+  ssl: true,
+  url: database_url,
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
+
 # Do not print debug messages in production
 config :logger, level: :info
 
