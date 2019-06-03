@@ -17,4 +17,5 @@ config :wellies, WelliesWeb.Endpoint,
 # Print only warnings and errors during test
 config :logger, level: :warn
 
+config :wellies, httpClient: WelliesWeb.HTTPClientStub
 config :wellies, api_key: "1234"
