@@ -17,7 +17,7 @@ config :wellies, WelliesWeb.Endpoint,
 
 config :wellies, Wellies.Repo,
   ssl: true,
-  url: database_url,
+  # url: database_url,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
 # Do not print debug messages in production
