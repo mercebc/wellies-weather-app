@@ -1,5 +1,5 @@
 import request from './request';
-import { api_key } from "./api_key";
+import api_key from "./api_key";
 import { createList, createEntry, clearResults, getCity, createNotFoundMessage, createServerErrorMessage } from "./dom";
 
 const API_KEY = api_key;
@@ -24,7 +24,9 @@ const checkResultContent = (result) => {
   result.count > 0 ? renderResult(result) : renderNotFound();
 }
 
-const renderServerError = () => createServerErrorMessage();
+const renderServerError = () => {
+  createServerErrorMessage();
+}
 
 const render = () => {
   clearResults();

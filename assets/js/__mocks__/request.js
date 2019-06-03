@@ -14,13 +14,11 @@ const result = (url) => {
 
 export default function request(url) {
   return new Promise((resolve, reject) => {
-    process.nextTick(() =>
       locations.list.length > 0
         ? resolve(result(url))
         : reject({
             error: 'Not found.',
-          }),
-    );
+          })
   });
 }
 

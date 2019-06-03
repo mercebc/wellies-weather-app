@@ -1,7 +1,7 @@
 use Mix.Config
 
 # For production, don't forget to configure the url host
-# to something meaningful, Phoenix uses this information
+ something meaningful, Phoenix uses this information
 # when generating URLs.
 #
 # Note we also include the path to a cache manifest
@@ -10,8 +10,10 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :wellies, WelliesWeb.Endpoint,
-  url: [host: "example.com", port: 80],
+  url: [scheme: "https", host: "shrouded-tundra-22745.herokuapp.com", port: 443],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json"
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -23,7 +25,7 @@ config :logger, level: :info
 #
 #     config :wellies, WelliesWeb.Endpoint,
 #       ...
-#       url: [host: "example.com", port: 443],
+#       url: [scheme: "https", host: "mysterious-meadow-6277", port: 443],
 #       https: [
 #         :inet6,
 #         port: 443,

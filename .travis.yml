@@ -1,4 +1,15 @@
-language:
-  elixir
+language: elixir
+
 elixir:
   - 1.8.0
+
+node_js:
+  - 10.3.0
+
+script:
+  - mix test
+  - node -v
+  - npm --prefix ./assets install
+  - npm --prefix ./assets test
+
+secure: "nRuKghykGalWS/ddpeUjBtmcC6dqJhX7ZpfU+Es/oT3WzKJplritlvQzQdZZ7/2Dz8I60p/t8AIevNkFJMRj8Vzm/4Eg4wQpS7PZiDvHPzjDnXMhDm1lIyrHSjAcgbQTWrNd3jnJ2YoeH687Q03x/JeF7aFExIhzCK/BQ+FtPcCKXdGkydTVbYEAZsyAwwXZfQHt6deMXfWhY3pxoZ3yBSr4Vzv63a/Ihw4LakMJw+UFZpsSZ3D8Es5zQH3E7qLYizvmHLxXIi3YUXvVvH3FcIo2fz2DYsffN9aV1TuTpVlsi3t7AThal4c2dXMzPvB+XEBwdwR3JDxL8XDZjS3S9pQ0tuK0TxItsL+f6HgoXdXVCxzGptlEFrInOJYDpXDUMWqmAmmYDD+9EyfnUINpIuPJEw+h3PV2Ip4S3LCRD89upge64ZERx/vD9X/mG3rq5VyVj/ZG3IOVIGyaWd+baNvb1YshlhggVCbkR5SgIPlTT9pp2rbDspI/TqSf+C2o717BYx0iSdsgu+fpnYtjKLeytk3LD99d9XPqqmhNq+T+U5GgHxpOt7qD1P47PMMgduFYcP57/GrTyuT2Pw4eZJhzi7KEvjo5ewRrdpt9/uK1rmZ/w8osRkyWZOp+QZe03flZvjmfHu9Ux9fEM2PoIiNWnVoYT5AOGmfLkmKeyYk="

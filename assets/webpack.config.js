@@ -1,9 +1,11 @@
+const webpack = require('webpack');
 const path = require('path');
 const glob = require('glob');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const myEnv = require('dotenv').config();
 
 module.exports = (env, options) => ({
   optimization: {
@@ -35,6 +37,7 @@ module.exports = (env, options) => ({
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({ API_KEY: JSON.stringify(myEnv.parsed.WELLIES_API_KEY) }),
     new MiniCssExtractPlugin({ filename: '../css/app.css' }),
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }])
   ]

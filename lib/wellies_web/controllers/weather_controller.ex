@@ -1,7 +1,6 @@
 defmodule WelliesWeb.WeatherController do
   use WelliesWeb, :controller
   alias WelliesWeb.CurrentTemperature
-  alias WelliesWeb.HourlyTemperature
   alias WelliesWeb.FiveDaysTemperature
 
   def weather(conn, %{"id" => id} = _params) do
