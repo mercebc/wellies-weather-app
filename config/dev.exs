@@ -30,6 +30,10 @@ config :wellies, WelliesWeb.Endpoint,
     ]
   ]
 
+
+config :wellies, httpClient: WelliesWeb.HTTPClient
+config :wellies, api_key: System.get_env("WELLIES_API_KEY")
+
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed
@@ -74,6 +78,3 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
-
-
-import_config "dev.secret.exs"
