@@ -8,7 +8,7 @@
 use Mix.Config
 
 config :wellies,
-       ecto_repos: [Wellies.Repo]
+       ecto_repos: []
 
 # Configures the endpoint
 config :wellies, WelliesWeb.Endpoint,

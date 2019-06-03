@@ -9,7 +9,7 @@ defmodule Wellies.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Wellies.Repo,
+      # Wellies.Repo,
       # Start the endpoint when the application starts
       WelliesWeb.Endpoint
       # Starts a worker by calling: Wellies.Worker.start_link(arg)
