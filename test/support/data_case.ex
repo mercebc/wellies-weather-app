@@ -32,7 +32,7 @@ defmodule Wellies.DataCase do
   #     Ecto.Adapters.SQL.Sandbox.mode(Wellies.Repo, {:shared, self()})
   #   end
   #
-  #   :ok
+    # :ok
   # end
 
   # @doc """

@@ -1,5 +1,5 @@
 defmodule WelliesWeb.PageControllerTest do
-  use WelliesWeb.ConnCase
+  use WelliesWeb.ConnCase, async: true
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

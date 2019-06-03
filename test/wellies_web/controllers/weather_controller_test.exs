@@ -1,5 +1,5 @@
 defmodule WelliesWeb.WeatherControllerTest do
-  use WelliesWeb.ConnCase
+  use WelliesWeb.ConnCase, async: true
 
   test "renders the weather in New York", %{conn: conn} do
     conn = get(conn, "/weather?id=012345")

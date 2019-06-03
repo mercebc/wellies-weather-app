@@ -25,13 +25,13 @@ defmodule WelliesWeb.ChannelCase do
     end
   end
 
-  # setup tags do
+  setup _tags do
     # :ok = Ecto.Adapters.SQL.Sandbox.checkout(Wellies.Repo)
     #
     # unless tags[:async] do
     #   Ecto.Adapters.SQL.Sandbox.mode(Wellies.Repo, {:shared, self()})
     # end
     #
-    # :ok
-  # end
+    :ok
+  end
 end
