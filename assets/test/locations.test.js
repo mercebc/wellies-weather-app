@@ -3,7 +3,7 @@ import { getLocations, renderResult, render} from '../js/locations';
 jest.mock('../js/request');
 jest.mock('../js/api_key');
 
-test('renders the page with results', (done) => {
+test('renders the page with results', () => {
 
   document.body.innerHTML =
     '<div class="flex">'+
@@ -32,16 +32,14 @@ test('renders the page with results', (done) => {
     '</section>';
 
   render().then(() => {
-    console.log(document);
     return expect(document.body.innerHTML).toEqual(renderedElements);
   })
   .catch(function(error) {
     console.log(error);
-  })
-  .finally(done);
+  });
 });
 
-test('renders the page with not found city', (done) => {
+test('renders the page with not found city', () => {
 
   document.body.innerHTML =
     '<div class="flex">'+
@@ -68,6 +66,5 @@ test('renders the page with not found city', (done) => {
   })
   .catch(function(error) {
     console.log(error);
-  })
-  .finally(done);
+  });
 });

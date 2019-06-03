@@ -21,17 +21,14 @@ const renderResult = (result) => {
 const renderNotFound = () => createNotFoundMessage();
 
 const checkResultContent = (result) => {
-  console.log("Im also here");
   result.count > 0 ? renderResult(result) : renderNotFound();
 }
 
 const renderServerError = () => {
-  console.log("Im here");
   createServerErrorMessage();
 }
 
 const render = () => {
-  console.log(document);
   clearResults();
   const city = getCity()
 
