@@ -1,7 +1,7 @@
 use Mix.Config
 
 # For production, don't forget to configure the url host
- something meaningful, Phoenix uses this information
+#  something meaningful, Phoenix uses this information
 # when generating URLs.
 #
 # Note we also include the path to a cache manifest
