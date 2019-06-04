@@ -12,6 +12,7 @@ config :wellies,
 
 # Configures the endpoint
 config :wellies, WelliesWeb.Endpoint,
+       http: [port: {:system, "PORT"}],
        url: [host: "localhost"],
        secret_key_base: "XpAPRCSOIcEEYqmhFc2/QCX/LdPehQxkOb5Sa1L2+DFeTFUz3dL18A+FRQYnzkCV",
        render_errors: [view: WelliesWeb.ErrorView, accepts: ~w(html json)],
