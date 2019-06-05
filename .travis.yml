@@ -1,17 +1,13 @@
 language: elixir
-
 elixir:
-  - 1.8.0
-
+- 1.8.0
 node_js:
-  - 10.3.0
-
+- 10.3.0
 script:
-  - mix test
-  - npm --prefix ./assets install
-  - npm --prefix ./assets test
-
+- mix test
+- npm --prefix ./assets install
+- npm --prefix ./assets test
 deploy:
   provider: heroku
   api_key:
-    secure: "nRuKghykGalWS/ddpeUjBtmcC6dqJhX7ZpfU+Es/oT3WzKJplritlvQzQdZZ7/2Dz8I60p/t8AIevNkFJMRj8Vzm/4Eg4wQpS7PZiDvHPzjDnXMhDm1lIyrHSjAcgbQTWrNd3jnJ2YoeH687Q03x/JeF7aFExIhzCK/BQ+FtPcCKXdGkydTVbYEAZsyAwwXZfQHt6deMXfWhY3pxoZ3yBSr4Vzv63a/Ihw4LakMJw+UFZpsSZ3D8Es5zQH3E7qLYizvmHLxXIi3YUXvVvH3FcIo2fz2DYsffN9aV1TuTpVlsi3t7AThal4c2dXMzPvB+XEBwdwR3JDxL8XDZjS3S9pQ0tuK0TxItsL+f6HgoXdXVCxzGptlEFrInOJYDpXDUMWqmAmmYDD+9EyfnUINpIuPJEw+h3PV2Ip4S3LCRD89upge64ZERx/vD9X/mG3rq5VyVj/ZG3IOVIGyaWd+baNvb1YshlhggVCbkR5SgIPlTT9pp2rbDspI/TqSf+C2o717BYx0iSdsgu+fpnYtjKLeytk3LD99d9XPqqmhNq+T+U5GgHxpOt7qD1P47PMMgduFYcP57/GrTyuT2Pw4eZJhzi7KEvjo5ewRrdpt9/uK1rmZ/w8osRkyWZOp+QZe03flZvjmfHu9Ux9fEM2PoIiNWnVoYT5AOGmfLkmKeyYk="
+    secure: QOCBlmfZylZ6ZRp6ts0tUoOO5k8fKkwl8lHxtwt980cKhljUsqLqNhPDJcEH+WGRcTKBAhesu6XNg/JTm95dKkhmEGv+w6G1zO22/ngOIrLwkJSKpgtGA4WWfPPhUkAsludxBSK7MLn62bqbfuvoTa8/uxPJlQLz8KijhvUx4BLkE8EavZb38lbM46IPy+gFa+AhVVtJNybJpmcOGpZU9ymkaDuDlHZvHyFnoJJIjO2WRIQgcw2doZlP+TvDkFvNqvUdz8FubWaZCLcPwaArO7oCRkrAVFrqqe9/K+qKOmlbd5PaSjg0K8kFV/xUsjx4d1Di560ClrgRhOC4hirT016ROe+K0QoNBTXoxe4f6vDnAnDPH77RQ5JVrvUBC8mJZSsdpxZYsehVjpwHCUk7ez4g7Y9vx6yXRVczN6goMsTMchcb7p0behdIQqPy/sXSXc5cYBY5z/61hUAwSHLQWkkbDd0pR+pJLOrhQf2PQfnbxw77VZtrLCREIJ4kmt/ZgVN6jm/7gY45qcOSE6v54K06TeC3NLHYWUMN2+5MAOfQA0nTXnRmJXqJhqfQHCJRpRoEvOLbFS/7IZHMSdePPtEbrLmW73mhsx1TdlgHWMmgtz3XczkMU5uVPmedNZW4TzYWLAbN7M+SYLZA0xN5pWK9fJRg5Z7EyUxTR4c21WU=
