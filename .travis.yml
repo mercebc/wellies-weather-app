@@ -3,10 +3,13 @@ elixir:
 - 1.8.0
 node_js:
 - 10.3.0
+
 script:
 - mix test
 - npm --prefix ./assets install
 - npm --prefix ./assets test
+- MIX_ENV=test mix coveralls.travis
+
 deploy:
   provider: heroku
   api_key:
