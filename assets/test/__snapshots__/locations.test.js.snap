@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the input field 1`] = `
+<div
+  class="flex"
+>
+  <input
+    class="margin-small"
+    id="city"
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+</div>
+`;

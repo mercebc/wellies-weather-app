@@ -1,22 +1,13 @@
-import { getLocations, renderResult, render} from '../js/locations';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom'
 
-jest.mock('../js/request');
-jest.mock('../js/api_key');
+import Locations from '../js/locations';
+const ReactTestRenderer = require('react-test-renderer');
 
-test('renders the input field', () => {
+test('renders the input field with placeholder', () => {
+  const testInstance = ReactTestRenderer.create(
+    <Locations />
+  ).root;
 
-  document.body.innerHTML =
-    '';
-
-  const renderedElements =
-    '<div class="flex">'+
-      '<input class="margin-small" type="text" placeholder="Search..." id="city" value="">' +
-    '</div>';
-
-  render().then(() => {
-    return expect(document.body.innerHTML).toEqual(renderedElements);
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
+  expect(testInstance.findByType('input').props.placeholder).toBe("Search...");
 });

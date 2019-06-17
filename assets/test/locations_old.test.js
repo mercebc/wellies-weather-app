@@ -3,7 +3,7 @@ import { getLocations, renderResult, render} from '../js/locations';
 jest.mock('../js/request');
 jest.mock('../js/api_key');
 
-test('renders the page with results', () => {
+test.skip('renders the page with results', () => {
 
   document.body.innerHTML =
     '<div class="flex">'+
@@ -39,7 +39,7 @@ test('renders the page with results', () => {
   });
 });
 
-test('renders the page with not found city', () => {
+test.skip('renders the page with not found city', () => {
 
   document.body.innerHTML =
     '<div class="flex">'+
