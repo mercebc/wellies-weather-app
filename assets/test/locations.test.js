@@ -19,3 +19,11 @@ test('renders the banner', () => {
 
   expect(testInstance.findByProps({className: "wellies-banner"}).children).toEqual(['Find out if you are going to need wellies in your town!']);
 });
+
+test('renders the search button', () => {
+  const testInstance = ReactTestRenderer.create(
+    <Locations />
+  ).root;
+
+  expect(testInstance.findByType('button').children).toEqual(['Search']);
+});

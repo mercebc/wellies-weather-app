@@ -17,6 +17,7 @@ export default class Locations extends React.Component{
             id="city"
             value=""
           />
+          <button type='button' id='search'>Search</button>
         </div>
       </div>
     )
