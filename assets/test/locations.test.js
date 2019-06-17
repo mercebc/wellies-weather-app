@@ -27,3 +27,13 @@ test('renders the search button', () => {
 
   expect(testInstance.findByType('button').children).toEqual(['Search']);
 });
+
+test('Users input is saved into Locations state', () => {
+  const instanceOf = ReactTestRenderer.create(
+    <Locations />
+  ).getInstance();
+
+  instanceOf.handleCity('London');
+  expect(instanceOf.state.city).toEqual('London');
+});
+
