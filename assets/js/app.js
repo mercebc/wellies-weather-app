@@ -4,6 +4,9 @@ import "phoenix_html"
 
 import { render } from "./locations"
 
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+
 const search = document.getElementById("search")
 
 if (search) {
