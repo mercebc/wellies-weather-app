@@ -11,3 +11,11 @@ test('renders the input field with placeholder', () => {
 
   expect(testInstance.findByType('input').props.placeholder).toBe("Search...");
 });
+
+test('renders the banner', () => {
+  const testInstance = ReactTestRenderer.create(
+    <Locations />
+  ).root;
+
+  expect(testInstance.findByProps({className: "wellies-banner"}).children).toEqual(['Find out if you are going to need wellies in your town!']);
+});

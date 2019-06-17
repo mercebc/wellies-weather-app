@@ -1,14 +1,7 @@
 import css from "../css/app.css"
-
 import "phoenix_html"
-
-import { render } from "./locations"
-
+import Locations from "./locations"
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-const search = document.getElementById("search")
-
-if (search) {
-  search.onclick = render;
-}
+ReactDOM.render(<Locations />, document.getElementById("react-app"))
