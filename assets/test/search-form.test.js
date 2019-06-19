@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom'
+import { shallow, mount, render } from 'enzyme';
 
 import SearchForm from '../js/search-form';
 import ResultsTitle from '../js/results-list';
@@ -25,9 +26,8 @@ test('submits a form with London input', () => {
     const searchQuery = 'London';
     const onSearchSubmit = jest.fn();
 
-    const locationsInstance = ReactTestRenderer.create((
-      <SearchForm value={searchQuery} onSubmit={onSearchSubmit} />
-    )).root;
+    const locationsInstance = shallow(<SearchForm />);
+  console.log(locationsInstance);
 
     const formInstance = locationsInstance.findByType('form');
     expect(formInstance).toBeDefined();

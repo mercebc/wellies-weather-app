@@ -15,8 +15,7 @@
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -26,11 +25,17 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "copy-webpack-plugin": "^4.5.0",
     "css-loader": "^2.1.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.4.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react-test-renderer": "^16.8.6",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "4.4.0",
     "webpack-cli": "^3.3.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>test/setupTests.js"]
   }
 }
