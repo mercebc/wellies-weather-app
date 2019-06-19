@@ -1,0 +1,2582 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly Locations component 1`] = `
+ReactTestInstance {
+  "_fiber": FiberNode {
+    "_debugHookTypes": null,
+    "_debugID": 4,
+    "_debugIsCurrentlyTiming": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "alternate": null,
+    "child": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 5,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": [Circular],
+      "_debugSource": null,
+      "alternate": null,
+      "child": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 6,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": [Circular],
+        "_debugSource": null,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugHookTypes": null,
+          "_debugID": 8,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugHookTypes": null,
+            "_debugID": 9,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": null,
+            "childExpirationTime": 0,
+            "contextDependencies": null,
+            "effectTag": 0,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": "Find out if you are going to need wellies in your town!",
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": "Find out if you are going to need wellies in your town!",
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": Object {
+              "isHidden": false,
+              "tag": "TEXT",
+              "text": "Find out if you are going to need wellies in your town!",
+            },
+            "tag": 6,
+            "type": null,
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "contextDependencies": null,
+          "effectTag": 0,
+          "elementType": "p",
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": "Find out if you are going to need wellies in your town!",
+            "className": "wellies-banner",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": "Find out if you are going to need wellies in your town!",
+            "className": "wellies-banner",
+          },
+          "ref": null,
+          "return": [Circular],
+          "sibling": null,
+          "stateNode": Object {
+            "children": Array [
+              Object {
+                "isHidden": false,
+                "tag": "TEXT",
+                "text": "Find out if you are going to need wellies in your town!",
+              },
+            ],
+            "isHidden": false,
+            "props": Object {
+              "children": "Find out if you are going to need wellies in your town!",
+              "className": "wellies-banner",
+            },
+            "rootContainerInstance": Object {
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": <p
+                          className="wellies-banner"
+                        >
+                          Find out if you are going to need wellies in your town!
+                        </p>,
+                        "className": "phx-hero",
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "section",
+                    },
+                    Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [],
+                              "isHidden": false,
+                              "props": Object {
+                                "className": "margin-small",
+                                "id": "city",
+                                "onChange": [Function],
+                                "placeholder": "Search...",
+                                "type": "text",
+                                "value": "",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "input",
+                            },
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "isHidden": false,
+                                  "tag": "TEXT",
+                                  "text": "Search",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": "Search",
+                                "id": "search",
+                                "type": "submit",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "button",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": Array [
+                              <input
+                                className="margin-small"
+                                id="city"
+                                onChange={[Function]}
+                                placeholder="Search..."
+                                type="text"
+                                value=""
+                              />,
+                              <button
+                                id="search"
+                                type="submit"
+                              >
+                                Search
+                              </button>,
+                            ],
+                            "className": "flex",
+                            "onSubmit": [Function],
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "form",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": Array [
+                          <form
+                            className="flex"
+                            onSubmit={[Function]}
+                          >
+                            <input
+                              className="margin-small"
+                              id="city"
+                              onChange={[Function]}
+                              placeholder="Search..."
+                              type="text"
+                              value=""
+                            />
+                            <button
+                              id="search"
+                              type="submit"
+                            >
+                              Search
+                            </button>
+                          </form>,
+                          null,
+                        ],
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "section",
+                    },
+                  ],
+                  "isHidden": false,
+                  "props": Object {
+                    "children": Array [
+                      <section
+                        className="phx-hero"
+                      >
+                        <p
+                          className="wellies-banner"
+                        >
+                          Find out if you are going to need wellies in your town!
+                        </p>
+                      </section>,
+                      <SearchForm />,
+                    ],
+                    "className": "container",
+                  },
+                  "rootContainerInstance": [Circular],
+                  "tag": "INSTANCE",
+                  "type": "div",
+                },
+              ],
+              "createNodeMock": [Function],
+              "tag": "CONTAINER",
+            },
+            "tag": "INSTANCE",
+            "type": "p",
+          },
+          "tag": 5,
+          "type": "p",
+          "updateQueue": null,
+        },
+        "childExpirationTime": 0,
+        "contextDependencies": null,
+        "effectTag": 0,
+        "elementType": "section",
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {
+          "children": <p
+            className="wellies-banner"
+          >
+            Find out if you are going to need wellies in your town!
+          </p>,
+          "className": "phx-hero",
+        },
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {
+          "children": <p
+            className="wellies-banner"
+          >
+            Find out if you are going to need wellies in your town!
+          </p>,
+          "className": "phx-hero",
+        },
+        "ref": null,
+        "return": [Circular],
+        "sibling": FiberNode {
+          "_debugHookTypes": null,
+          "_debugID": 7,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugHookTypes": null,
+            "_debugID": 10,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugHookTypes": null,
+              "_debugID": 11,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugHookTypes": null,
+                "_debugID": 12,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "childExpirationTime": 0,
+                "contextDependencies": null,
+                "effectTag": 0,
+                "elementType": "input",
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "className": "margin-small",
+                  "id": "city",
+                  "onChange": [Function],
+                  "placeholder": "Search...",
+                  "type": "text",
+                  "value": "",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "className": "margin-small",
+                  "id": "city",
+                  "onChange": [Function],
+                  "placeholder": "Search...",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": FiberNode {
+                  "_debugHookTypes": null,
+                  "_debugID": 13,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugHookTypes": null,
+                    "_debugID": 14,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "contextDependencies": null,
+                    "effectTag": 0,
+                    "elementType": null,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": "Search",
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": "Search",
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": Object {
+                      "isHidden": false,
+                      "tag": "TEXT",
+                      "text": "Search",
+                    },
+                    "tag": 6,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "contextDependencies": null,
+                  "effectTag": 0,
+                  "elementType": "button",
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 1,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": "Search",
+                    "id": "search",
+                    "type": "submit",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": "Search",
+                    "id": "search",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": Object {
+                    "children": Array [
+                      Object {
+                        "isHidden": false,
+                        "tag": "TEXT",
+                        "text": "Search",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": "Search",
+                      "id": "search",
+                      "type": "submit",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "children": Array [
+                                    Object {
+                                      "isHidden": false,
+                                      "tag": "TEXT",
+                                      "text": "Find out if you are going to need wellies in your town!",
+                                    },
+                                  ],
+                                  "isHidden": false,
+                                  "props": Object {
+                                    "children": "Find out if you are going to need wellies in your town!",
+                                    "className": "wellies-banner",
+                                  },
+                                  "rootContainerInstance": [Circular],
+                                  "tag": "INSTANCE",
+                                  "type": "p",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": <p
+                                  className="wellies-banner"
+                                >
+                                  Find out if you are going to need wellies in your town!
+                                </p>,
+                                "className": "phx-hero",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "section",
+                            },
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "children": Array [
+                                    Object {
+                                      "children": Array [],
+                                      "isHidden": false,
+                                      "props": Object {
+                                        "className": "margin-small",
+                                        "id": "city",
+                                        "onChange": [Function],
+                                        "placeholder": "Search...",
+                                        "type": "text",
+                                        "value": "",
+                                      },
+                                      "rootContainerInstance": [Circular],
+                                      "tag": "INSTANCE",
+                                      "type": "input",
+                                    },
+                                    [Circular],
+                                  ],
+                                  "isHidden": false,
+                                  "props": Object {
+                                    "children": Array [
+                                      <input
+                                        className="margin-small"
+                                        id="city"
+                                        onChange={[Function]}
+                                        placeholder="Search..."
+                                        type="text"
+                                        value=""
+                                      />,
+                                      <button
+                                        id="search"
+                                        type="submit"
+                                      >
+                                        Search
+                                      </button>,
+                                    ],
+                                    "className": "flex",
+                                    "onSubmit": [Function],
+                                  },
+                                  "rootContainerInstance": [Circular],
+                                  "tag": "INSTANCE",
+                                  "type": "form",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": Array [
+                                  <form
+                                    className="flex"
+                                    onSubmit={[Function]}
+                                  >
+                                    <input
+                                      className="margin-small"
+                                      id="city"
+                                      onChange={[Function]}
+                                      placeholder="Search..."
+                                      type="text"
+                                      value=""
+                                    />
+                                    <button
+                                      id="search"
+                                      type="submit"
+                                    >
+                                      Search
+                                    </button>
+                                  </form>,
+                                  null,
+                                ],
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "section",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": Array [
+                              <section
+                                className="phx-hero"
+                              >
+                                <p
+                                  className="wellies-banner"
+                                >
+                                  Find out if you are going to need wellies in your town!
+                                </p>
+                              </section>,
+                              <SearchForm />,
+                            ],
+                            "className": "container",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "button",
+                  },
+                  "tag": 5,
+                  "type": "button",
+                  "updateQueue": null,
+                },
+                "stateNode": Object {
+                  "children": Array [],
+                  "isHidden": false,
+                  "props": Object {
+                    "className": "margin-small",
+                    "id": "city",
+                    "onChange": [Function],
+                    "placeholder": "Search...",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "rootContainerInstance": Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "isHidden": false,
+                                    "tag": "TEXT",
+                                    "text": "Find out if you are going to need wellies in your town!",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": "Find out if you are going to need wellies in your town!",
+                                  "className": "wellies-banner",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "p",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": <p
+                                className="wellies-banner"
+                              >
+                                Find out if you are going to need wellies in your town!
+                              </p>,
+                              "className": "phx-hero",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "section",
+                          },
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  [Circular],
+                                  Object {
+                                    "children": Array [
+                                      Object {
+                                        "isHidden": false,
+                                        "tag": "TEXT",
+                                        "text": "Search",
+                                      },
+                                    ],
+                                    "isHidden": false,
+                                    "props": Object {
+                                      "children": "Search",
+                                      "id": "search",
+                                      "type": "submit",
+                                    },
+                                    "rootContainerInstance": [Circular],
+                                    "tag": "INSTANCE",
+                                    "type": "button",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": Array [
+                                    <input
+                                      className="margin-small"
+                                      id="city"
+                                      onChange={[Function]}
+                                      placeholder="Search..."
+                                      type="text"
+                                      value=""
+                                    />,
+                                    <button
+                                      id="search"
+                                      type="submit"
+                                    >
+                                      Search
+                                    </button>,
+                                  ],
+                                  "className": "flex",
+                                  "onSubmit": [Function],
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "form",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": Array [
+                                <form
+                                  className="flex"
+                                  onSubmit={[Function]}
+                                >
+                                  <input
+                                    className="margin-small"
+                                    id="city"
+                                    onChange={[Function]}
+                                    placeholder="Search..."
+                                    type="text"
+                                    value=""
+                                  />
+                                  <button
+                                    id="search"
+                                    type="submit"
+                                  >
+                                    Search
+                                  </button>
+                                </form>,
+                                null,
+                              ],
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "section",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": Array [
+                            <section
+                              className="phx-hero"
+                            >
+                              <p
+                                className="wellies-banner"
+                              >
+                                Find out if you are going to need wellies in your town!
+                              </p>
+                            </section>,
+                            <SearchForm />,
+                          ],
+                          "className": "container",
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "div",
+                      },
+                    ],
+                    "createNodeMock": [Function],
+                    "tag": "CONTAINER",
+                  },
+                  "tag": "INSTANCE",
+                  "type": "input",
+                },
+                "tag": 5,
+                "type": "input",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "contextDependencies": null,
+              "effectTag": 0,
+              "elementType": "form",
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <input
+                    className="margin-small"
+                    id="city"
+                    onChange={[Function]}
+                    placeholder="Search..."
+                    type="text"
+                    value=""
+                  />,
+                  <button
+                    id="search"
+                    type="submit"
+                  >
+                    Search
+                  </button>,
+                ],
+                "className": "flex",
+                "onSubmit": [Function],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <input
+                    className="margin-small"
+                    id="city"
+                    onChange={[Function]}
+                    placeholder="Search..."
+                    type="text"
+                    value=""
+                  />,
+                  <button
+                    id="search"
+                    type="submit"
+                  >
+                    Search
+                  </button>,
+                ],
+                "className": "flex",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [],
+                    "isHidden": false,
+                    "props": Object {
+                      "className": "margin-small",
+                      "id": "city",
+                      "onChange": [Function],
+                      "placeholder": "Search...",
+                      "type": "text",
+                      "value": "",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "children": Array [
+                                    Object {
+                                      "isHidden": false,
+                                      "tag": "TEXT",
+                                      "text": "Find out if you are going to need wellies in your town!",
+                                    },
+                                  ],
+                                  "isHidden": false,
+                                  "props": Object {
+                                    "children": "Find out if you are going to need wellies in your town!",
+                                    "className": "wellies-banner",
+                                  },
+                                  "rootContainerInstance": [Circular],
+                                  "tag": "INSTANCE",
+                                  "type": "p",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": <p
+                                  className="wellies-banner"
+                                >
+                                  Find out if you are going to need wellies in your town!
+                                </p>,
+                                "className": "phx-hero",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "section",
+                            },
+                            Object {
+                              "children": Array [
+                                [Circular],
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": Array [
+                                  <form
+                                    className="flex"
+                                    onSubmit={[Function]}
+                                  >
+                                    <input
+                                      className="margin-small"
+                                      id="city"
+                                      onChange={[Function]}
+                                      placeholder="Search..."
+                                      type="text"
+                                      value=""
+                                    />
+                                    <button
+                                      id="search"
+                                      type="submit"
+                                    >
+                                      Search
+                                    </button>
+                                  </form>,
+                                  null,
+                                ],
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "section",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": Array [
+                              <section
+                                className="phx-hero"
+                              >
+                                <p
+                                  className="wellies-banner"
+                                >
+                                  Find out if you are going to need wellies in your town!
+                                </p>
+                              </section>,
+                              <SearchForm />,
+                            ],
+                            "className": "container",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "input",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "isHidden": false,
+                        "tag": "TEXT",
+                        "text": "Search",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": "Search",
+                      "id": "search",
+                      "type": "submit",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "children": Array [
+                                    Object {
+                                      "isHidden": false,
+                                      "tag": "TEXT",
+                                      "text": "Find out if you are going to need wellies in your town!",
+                                    },
+                                  ],
+                                  "isHidden": false,
+                                  "props": Object {
+                                    "children": "Find out if you are going to need wellies in your town!",
+                                    "className": "wellies-banner",
+                                  },
+                                  "rootContainerInstance": [Circular],
+                                  "tag": "INSTANCE",
+                                  "type": "p",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": <p
+                                  className="wellies-banner"
+                                >
+                                  Find out if you are going to need wellies in your town!
+                                </p>,
+                                "className": "phx-hero",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "section",
+                            },
+                            Object {
+                              "children": Array [
+                                [Circular],
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": Array [
+                                  <form
+                                    className="flex"
+                                    onSubmit={[Function]}
+                                  >
+                                    <input
+                                      className="margin-small"
+                                      id="city"
+                                      onChange={[Function]}
+                                      placeholder="Search..."
+                                      type="text"
+                                      value=""
+                                    />
+                                    <button
+                                      id="search"
+                                      type="submit"
+                                    >
+                                      Search
+                                    </button>
+                                  </form>,
+                                  null,
+                                ],
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "section",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": Array [
+                              <section
+                                className="phx-hero"
+                              >
+                                <p
+                                  className="wellies-banner"
+                                >
+                                  Find out if you are going to need wellies in your town!
+                                </p>
+                              </section>,
+                              <SearchForm />,
+                            ],
+                            "className": "container",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "button",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": Array [
+                    <input
+                      className="margin-small"
+                      id="city"
+                      onChange={[Function]}
+                      placeholder="Search..."
+                      type="text"
+                      value=""
+                    />,
+                    <button
+                      id="search"
+                      type="submit"
+                    >
+                      Search
+                    </button>,
+                  ],
+                  "className": "flex",
+                  "onSubmit": [Function],
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "children": Array [
+                                Object {
+                                  "isHidden": false,
+                                  "tag": "TEXT",
+                                  "text": "Find out if you are going to need wellies in your town!",
+                                },
+                              ],
+                              "isHidden": false,
+                              "props": Object {
+                                "children": "Find out if you are going to need wellies in your town!",
+                                "className": "wellies-banner",
+                              },
+                              "rootContainerInstance": [Circular],
+                              "tag": "INSTANCE",
+                              "type": "p",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": <p
+                              className="wellies-banner"
+                            >
+                              Find out if you are going to need wellies in your town!
+                            </p>,
+                            "className": "phx-hero",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "section",
+                        },
+                        Object {
+                          "children": Array [
+                            [Circular],
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": Array [
+                              <form
+                                className="flex"
+                                onSubmit={[Function]}
+                              >
+                                <input
+                                  className="margin-small"
+                                  id="city"
+                                  onChange={[Function]}
+                                  placeholder="Search..."
+                                  type="text"
+                                  value=""
+                                />
+                                <button
+                                  id="search"
+                                  type="submit"
+                                >
+                                  Search
+                                </button>
+                              </form>,
+                              null,
+                            ],
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "section",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": Array [
+                          <section
+                            className="phx-hero"
+                          >
+                            <p
+                              className="wellies-banner"
+                            >
+                              Find out if you are going to need wellies in your town!
+                            </p>
+                          </section>,
+                          <SearchForm />,
+                        ],
+                        "className": "container",
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "form",
+              },
+              "tag": 5,
+              "type": "form",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "contextDependencies": null,
+            "effectTag": 0,
+            "elementType": "section",
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <form
+                  className="flex"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="margin-small"
+                    id="city"
+                    onChange={[Function]}
+                    placeholder="Search..."
+                    type="text"
+                    value=""
+                  />
+                  <button
+                    id="search"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>,
+                null,
+              ],
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": Array [
+                <form
+                  className="flex"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="margin-small"
+                    id="city"
+                    onChange={[Function]}
+                    placeholder="Search..."
+                    type="text"
+                    value=""
+                  />
+                  <button
+                    id="search"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>,
+                null,
+              ],
+            },
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": Object {
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [],
+                      "isHidden": false,
+                      "props": Object {
+                        "className": "margin-small",
+                        "id": "city",
+                        "onChange": [Function],
+                        "placeholder": "Search...",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "rootContainerInstance": Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "children": Array [
+                                      Object {
+                                        "isHidden": false,
+                                        "tag": "TEXT",
+                                        "text": "Find out if you are going to need wellies in your town!",
+                                      },
+                                    ],
+                                    "isHidden": false,
+                                    "props": Object {
+                                      "children": "Find out if you are going to need wellies in your town!",
+                                      "className": "wellies-banner",
+                                    },
+                                    "rootContainerInstance": [Circular],
+                                    "tag": "INSTANCE",
+                                    "type": "p",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": <p
+                                    className="wellies-banner"
+                                  >
+                                    Find out if you are going to need wellies in your town!
+                                  </p>,
+                                  "className": "phx-hero",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "section",
+                              },
+                              [Circular],
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": Array [
+                                <section
+                                  className="phx-hero"
+                                >
+                                  <p
+                                    className="wellies-banner"
+                                  >
+                                    Find out if you are going to need wellies in your town!
+                                  </p>
+                                </section>,
+                                <SearchForm />,
+                              ],
+                              "className": "container",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "div",
+                          },
+                        ],
+                        "createNodeMock": [Function],
+                        "tag": "CONTAINER",
+                      },
+                      "tag": "INSTANCE",
+                      "type": "input",
+                    },
+                    Object {
+                      "children": Array [
+                        Object {
+                          "isHidden": false,
+                          "tag": "TEXT",
+                          "text": "Search",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": "Search",
+                        "id": "search",
+                        "type": "submit",
+                      },
+                      "rootContainerInstance": Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "children": Array [
+                                      Object {
+                                        "isHidden": false,
+                                        "tag": "TEXT",
+                                        "text": "Find out if you are going to need wellies in your town!",
+                                      },
+                                    ],
+                                    "isHidden": false,
+                                    "props": Object {
+                                      "children": "Find out if you are going to need wellies in your town!",
+                                      "className": "wellies-banner",
+                                    },
+                                    "rootContainerInstance": [Circular],
+                                    "tag": "INSTANCE",
+                                    "type": "p",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": <p
+                                    className="wellies-banner"
+                                  >
+                                    Find out if you are going to need wellies in your town!
+                                  </p>,
+                                  "className": "phx-hero",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "section",
+                              },
+                              [Circular],
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": Array [
+                                <section
+                                  className="phx-hero"
+                                >
+                                  <p
+                                    className="wellies-banner"
+                                  >
+                                    Find out if you are going to need wellies in your town!
+                                  </p>
+                                </section>,
+                                <SearchForm />,
+                              ],
+                              "className": "container",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "div",
+                          },
+                        ],
+                        "createNodeMock": [Function],
+                        "tag": "CONTAINER",
+                      },
+                      "tag": "INSTANCE",
+                      "type": "button",
+                    },
+                  ],
+                  "isHidden": false,
+                  "props": Object {
+                    "children": Array [
+                      <input
+                        className="margin-small"
+                        id="city"
+                        onChange={[Function]}
+                        placeholder="Search..."
+                        type="text"
+                        value=""
+                      />,
+                      <button
+                        id="search"
+                        type="submit"
+                      >
+                        Search
+                      </button>,
+                    ],
+                    "className": "flex",
+                    "onSubmit": [Function],
+                  },
+                  "rootContainerInstance": Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "isHidden": false,
+                                    "tag": "TEXT",
+                                    "text": "Find out if you are going to need wellies in your town!",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": "Find out if you are going to need wellies in your town!",
+                                  "className": "wellies-banner",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "p",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": <p
+                                className="wellies-banner"
+                              >
+                                Find out if you are going to need wellies in your town!
+                              </p>,
+                              "className": "phx-hero",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "section",
+                          },
+                          [Circular],
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": Array [
+                            <section
+                              className="phx-hero"
+                            >
+                              <p
+                                className="wellies-banner"
+                              >
+                                Find out if you are going to need wellies in your town!
+                              </p>
+                            </section>,
+                            <SearchForm />,
+                          ],
+                          "className": "container",
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "div",
+                      },
+                    ],
+                    "createNodeMock": [Function],
+                    "tag": "CONTAINER",
+                  },
+                  "tag": "INSTANCE",
+                  "type": "form",
+                },
+              ],
+              "isHidden": false,
+              "props": Object {
+                "children": Array [
+                  <form
+                    className="flex"
+                    onSubmit={[Function]}
+                  >
+                    <input
+                      className="margin-small"
+                      id="city"
+                      onChange={[Function]}
+                      placeholder="Search..."
+                      type="text"
+                      value=""
+                    />
+                    <button
+                      id="search"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                  </form>,
+                  null,
+                ],
+              },
+              "rootContainerInstance": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "isHidden": false,
+                                "tag": "TEXT",
+                                "text": "Find out if you are going to need wellies in your town!",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": "Find out if you are going to need wellies in your town!",
+                              "className": "wellies-banner",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "p",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": <p
+                            className="wellies-banner"
+                          >
+                            Find out if you are going to need wellies in your town!
+                          </p>,
+                          "className": "phx-hero",
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "section",
+                      },
+                      [Circular],
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        <section
+                          className="phx-hero"
+                        >
+                          <p
+                            className="wellies-banner"
+                          >
+                            Find out if you are going to need wellies in your town!
+                          </p>
+                        </section>,
+                        <SearchForm />,
+                      ],
+                      "className": "container",
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "createNodeMock": [Function],
+                "tag": "CONTAINER",
+              },
+              "tag": "INSTANCE",
+              "type": "section",
+            },
+            "tag": 5,
+            "type": "section",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "contextDependencies": null,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 1,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {
+            "city": "",
+            "isSubmitted": false,
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {},
+          "ref": null,
+          "return": [Circular],
+          "sibling": null,
+          "stateNode": SearchForm {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "handleCity": [Function],
+            "handleResult": [Function],
+            "props": Object {},
+            "refs": Object {},
+            "state": Object {
+              "city": "",
+              "isSubmitted": false,
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "stateNode": Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "isHidden": false,
+                  "tag": "TEXT",
+                  "text": "Find out if you are going to need wellies in your town!",
+                },
+              ],
+              "isHidden": false,
+              "props": Object {
+                "children": "Find out if you are going to need wellies in your town!",
+                "className": "wellies-banner",
+              },
+              "rootContainerInstance": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      [Circular],
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              Object {
+                                "children": Array [],
+                                "isHidden": false,
+                                "props": Object {
+                                  "className": "margin-small",
+                                  "id": "city",
+                                  "onChange": [Function],
+                                  "placeholder": "Search...",
+                                  "type": "text",
+                                  "value": "",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "input",
+                              },
+                              Object {
+                                "children": Array [
+                                  Object {
+                                    "isHidden": false,
+                                    "tag": "TEXT",
+                                    "text": "Search",
+                                  },
+                                ],
+                                "isHidden": false,
+                                "props": Object {
+                                  "children": "Search",
+                                  "id": "search",
+                                  "type": "submit",
+                                },
+                                "rootContainerInstance": [Circular],
+                                "tag": "INSTANCE",
+                                "type": "button",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": Array [
+                                <input
+                                  className="margin-small"
+                                  id="city"
+                                  onChange={[Function]}
+                                  placeholder="Search..."
+                                  type="text"
+                                  value=""
+                                />,
+                                <button
+                                  id="search"
+                                  type="submit"
+                                >
+                                  Search
+                                </button>,
+                              ],
+                              "className": "flex",
+                              "onSubmit": [Function],
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "form",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": Array [
+                            <form
+                              className="flex"
+                              onSubmit={[Function]}
+                            >
+                              <input
+                                className="margin-small"
+                                id="city"
+                                onChange={[Function]}
+                                placeholder="Search..."
+                                type="text"
+                                value=""
+                              />
+                              <button
+                                id="search"
+                                type="submit"
+                              >
+                                Search
+                              </button>
+                            </form>,
+                            null,
+                          ],
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "section",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        <section
+                          className="phx-hero"
+                        >
+                          <p
+                            className="wellies-banner"
+                          >
+                            Find out if you are going to need wellies in your town!
+                          </p>
+                        </section>,
+                        <SearchForm />,
+                      ],
+                      "className": "container",
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "createNodeMock": [Function],
+                "tag": "CONTAINER",
+              },
+              "tag": "INSTANCE",
+              "type": "p",
+            },
+          ],
+          "isHidden": false,
+          "props": Object {
+            "children": <p
+              className="wellies-banner"
+            >
+              Find out if you are going to need wellies in your town!
+            </p>,
+            "className": "phx-hero",
+          },
+          "rootContainerInstance": Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  [Circular],
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [],
+                            "isHidden": false,
+                            "props": Object {
+                              "className": "margin-small",
+                              "id": "city",
+                              "onChange": [Function],
+                              "placeholder": "Search...",
+                              "type": "text",
+                              "value": "",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "input",
+                          },
+                          Object {
+                            "children": Array [
+                              Object {
+                                "isHidden": false,
+                                "tag": "TEXT",
+                                "text": "Search",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": "Search",
+                              "id": "search",
+                              "type": "submit",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "button",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": Array [
+                            <input
+                              className="margin-small"
+                              id="city"
+                              onChange={[Function]}
+                              placeholder="Search..."
+                              type="text"
+                              value=""
+                            />,
+                            <button
+                              id="search"
+                              type="submit"
+                            >
+                              Search
+                            </button>,
+                          ],
+                          "className": "flex",
+                          "onSubmit": [Function],
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "form",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        <form
+                          className="flex"
+                          onSubmit={[Function]}
+                        >
+                          <input
+                            className="margin-small"
+                            id="city"
+                            onChange={[Function]}
+                            placeholder="Search..."
+                            type="text"
+                            value=""
+                          />
+                          <button
+                            id="search"
+                            type="submit"
+                          >
+                            Search
+                          </button>
+                        </form>,
+                        null,
+                      ],
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "section",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": Array [
+                    <section
+                      className="phx-hero"
+                    >
+                      <p
+                        className="wellies-banner"
+                      >
+                        Find out if you are going to need wellies in your town!
+                      </p>
+                    </section>,
+                    <SearchForm />,
+                  ],
+                  "className": "container",
+                },
+                "rootContainerInstance": [Circular],
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+            ],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "tag": "INSTANCE",
+          "type": "section",
+        },
+        "tag": 5,
+        "type": "section",
+        "updateQueue": null,
+      },
+      "childExpirationTime": 0,
+      "contextDependencies": null,
+      "effectTag": 0,
+      "elementType": "div",
+      "expirationTime": 0,
+      "firstEffect": null,
+      "index": 0,
+      "key": null,
+      "lastEffect": null,
+      "memoizedProps": Object {
+        "children": Array [
+          <section
+            className="phx-hero"
+          >
+            <p
+              className="wellies-banner"
+            >
+              Find out if you are going to need wellies in your town!
+            </p>
+          </section>,
+          <SearchForm />,
+        ],
+        "className": "container",
+      },
+      "memoizedState": null,
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": Object {
+        "children": Array [
+          <section
+            className="phx-hero"
+          >
+            <p
+              className="wellies-banner"
+            >
+              Find out if you are going to need wellies in your town!
+            </p>
+          </section>,
+          <SearchForm />,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "return": [Circular],
+      "sibling": null,
+      "stateNode": Object {
+        "children": Array [
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "isHidden": false,
+                    "tag": "TEXT",
+                    "text": "Find out if you are going to need wellies in your town!",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": "Find out if you are going to need wellies in your town!",
+                  "className": "wellies-banner",
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    [Circular],
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "p",
+              },
+            ],
+            "isHidden": false,
+            "props": Object {
+              "children": <p
+                className="wellies-banner"
+              >
+                Find out if you are going to need wellies in your town!
+              </p>,
+              "className": "phx-hero",
+            },
+            "rootContainerInstance": Object {
+              "children": Array [
+                [Circular],
+              ],
+              "createNodeMock": [Function],
+              "tag": "CONTAINER",
+            },
+            "tag": "INSTANCE",
+            "type": "section",
+          },
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [],
+                    "isHidden": false,
+                    "props": Object {
+                      "className": "margin-small",
+                      "id": "city",
+                      "onChange": [Function],
+                      "placeholder": "Search...",
+                      "type": "text",
+                      "value": "",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "input",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "isHidden": false,
+                        "tag": "TEXT",
+                        "text": "Search",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": "Search",
+                      "id": "search",
+                      "type": "submit",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "button",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": Array [
+                    <input
+                      className="margin-small"
+                      id="city"
+                      onChange={[Function]}
+                      placeholder="Search..."
+                      type="text"
+                      value=""
+                    />,
+                    <button
+                      id="search"
+                      type="submit"
+                    >
+                      Search
+                    </button>,
+                  ],
+                  "className": "flex",
+                  "onSubmit": [Function],
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    [Circular],
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "form",
+              },
+            ],
+            "isHidden": false,
+            "props": Object {
+              "children": Array [
+                <form
+                  className="flex"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="margin-small"
+                    id="city"
+                    onChange={[Function]}
+                    placeholder="Search..."
+                    type="text"
+                    value=""
+                  />
+                  <button
+                    id="search"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>,
+                null,
+              ],
+            },
+            "rootContainerInstance": Object {
+              "children": Array [
+                [Circular],
+              ],
+              "createNodeMock": [Function],
+              "tag": "CONTAINER",
+            },
+            "tag": "INSTANCE",
+            "type": "section",
+          },
+        ],
+        "isHidden": false,
+        "props": Object {
+          "children": Array [
+            <section
+              className="phx-hero"
+            >
+              <p
+                className="wellies-banner"
+              >
+                Find out if you are going to need wellies in your town!
+              </p>
+            </section>,
+            <SearchForm />,
+          ],
+          "className": "container",
+        },
+        "rootContainerInstance": Object {
+          "children": Array [
+            [Circular],
+          ],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "tag": "INSTANCE",
+        "type": "div",
+      },
+      "tag": 5,
+      "type": "div",
+      "updateQueue": null,
+    },
+    "childExpirationTime": 0,
+    "contextDependencies": null,
+    "effectTag": 1,
+    "elementType": [Function],
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {},
+    "memoizedState": null,
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {},
+    "ref": null,
+    "return": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 2,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "alternate": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 2,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "alternate": [Circular],
+        "child": null,
+        "childExpirationTime": 0,
+        "contextDependencies": null,
+        "effectTag": 0,
+        "elementType": null,
+        "expirationTime": 1073741823,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "sibling": null,
+        "stateNode": Object {
+          "containerInfo": Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "isHidden": false,
+                            "tag": "TEXT",
+                            "text": "Find out if you are going to need wellies in your town!",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": "Find out if you are going to need wellies in your town!",
+                          "className": "wellies-banner",
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "p",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": <p
+                        className="wellies-banner"
+                      >
+                        Find out if you are going to need wellies in your town!
+                      </p>,
+                      "className": "phx-hero",
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "section",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [],
+                            "isHidden": false,
+                            "props": Object {
+                              "className": "margin-small",
+                              "id": "city",
+                              "onChange": [Function],
+                              "placeholder": "Search...",
+                              "type": "text",
+                              "value": "",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "input",
+                          },
+                          Object {
+                            "children": Array [
+                              Object {
+                                "isHidden": false,
+                                "tag": "TEXT",
+                                "text": "Search",
+                              },
+                            ],
+                            "isHidden": false,
+                            "props": Object {
+                              "children": "Search",
+                              "id": "search",
+                              "type": "submit",
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "button",
+                          },
+                        ],
+                        "isHidden": false,
+                        "props": Object {
+                          "children": Array [
+                            <input
+                              className="margin-small"
+                              id="city"
+                              onChange={[Function]}
+                              placeholder="Search..."
+                              type="text"
+                              value=""
+                            />,
+                            <button
+                              id="search"
+                              type="submit"
+                            >
+                              Search
+                            </button>,
+                          ],
+                          "className": "flex",
+                          "onSubmit": [Function],
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "form",
+                      },
+                    ],
+                    "isHidden": false,
+                    "props": Object {
+                      "children": Array [
+                        <form
+                          className="flex"
+                          onSubmit={[Function]}
+                        >
+                          <input
+                            className="margin-small"
+                            id="city"
+                            onChange={[Function]}
+                            placeholder="Search..."
+                            type="text"
+                            value=""
+                          />
+                          <button
+                            id="search"
+                            type="submit"
+                          >
+                            Search
+                          </button>
+                        </form>,
+                        null,
+                      ],
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "section",
+                  },
+                ],
+                "isHidden": false,
+                "props": Object {
+                  "children": Array [
+                    <section
+                      className="phx-hero"
+                    >
+                      <p
+                        className="wellies-banner"
+                      >
+                        Find out if you are going to need wellies in your town!
+                      </p>
+                    </section>,
+                    <SearchForm />,
+                  ],
+                  "className": "container",
+                },
+                "rootContainerInstance": [Circular],
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+            ],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "context": Object {},
+          "current": [Circular],
+          "didError": false,
+          "earliestPendingTime": 0,
+          "earliestSuspendedTime": 0,
+          "expirationTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "hydrate": false,
+          "latestPendingTime": 0,
+          "latestPingedTime": 0,
+          "latestSuspendedTime": 0,
+          "nextExpirationTimeToWorkOn": 0,
+          "nextScheduledRoot": null,
+          "pendingChildren": null,
+          "pendingCommitExpirationTime": 0,
+          "pendingContext": null,
+          "pingCache": null,
+          "timeoutHandle": -1,
+        },
+        "tag": 3,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Locations />,
+            },
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Locations />,
+            },
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "childExpirationTime": 0,
+      "contextDependencies": null,
+      "effectTag": 0,
+      "elementType": null,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <Locations />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "sibling": null,
+      "stateNode": Object {
+        "containerInfo": Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        Object {
+                          "isHidden": false,
+                          "tag": "TEXT",
+                          "text": "Find out if you are going to need wellies in your town!",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": "Find out if you are going to need wellies in your town!",
+                        "className": "wellies-banner",
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "p",
+                    },
+                  ],
+                  "isHidden": false,
+                  "props": Object {
+                    "children": <p
+                      className="wellies-banner"
+                    >
+                      Find out if you are going to need wellies in your town!
+                    </p>,
+                    "className": "phx-hero",
+                  },
+                  "rootContainerInstance": [Circular],
+                  "tag": "INSTANCE",
+                  "type": "section",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [],
+                          "isHidden": false,
+                          "props": Object {
+                            "className": "margin-small",
+                            "id": "city",
+                            "onChange": [Function],
+                            "placeholder": "Search...",
+                            "type": "text",
+                            "value": "",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "input",
+                        },
+                        Object {
+                          "children": Array [
+                            Object {
+                              "isHidden": false,
+                              "tag": "TEXT",
+                              "text": "Search",
+                            },
+                          ],
+                          "isHidden": false,
+                          "props": Object {
+                            "children": "Search",
+                            "id": "search",
+                            "type": "submit",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "button",
+                        },
+                      ],
+                      "isHidden": false,
+                      "props": Object {
+                        "children": Array [
+                          <input
+                            className="margin-small"
+                            id="city"
+                            onChange={[Function]}
+                            placeholder="Search..."
+                            type="text"
+                            value=""
+                          />,
+                          <button
+                            id="search"
+                            type="submit"
+                          >
+                            Search
+                          </button>,
+                        ],
+                        "className": "flex",
+                        "onSubmit": [Function],
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "form",
+                    },
+                  ],
+                  "isHidden": false,
+                  "props": Object {
+                    "children": Array [
+                      <form
+                        className="flex"
+                        onSubmit={[Function]}
+                      >
+                        <input
+                          className="margin-small"
+                          id="city"
+                          onChange={[Function]}
+                          placeholder="Search..."
+                          type="text"
+                          value=""
+                        />
+                        <button
+                          id="search"
+                          type="submit"
+                        >
+                          Search
+                        </button>
+                      </form>,
+                      null,
+                    ],
+                  },
+                  "rootContainerInstance": [Circular],
+                  "tag": "INSTANCE",
+                  "type": "section",
+                },
+              ],
+              "isHidden": false,
+              "props": Object {
+                "children": Array [
+                  <section
+                    className="phx-hero"
+                  >
+                    <p
+                      className="wellies-banner"
+                    >
+                      Find out if you are going to need wellies in your town!
+                    </p>
+                  </section>,
+                  <SearchForm />,
+                ],
+                "className": "container",
+              },
+              "rootContainerInstance": [Circular],
+              "tag": "INSTANCE",
+              "type": "div",
+            },
+          ],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "context": Object {},
+        "current": [Circular],
+        "didError": false,
+        "earliestPendingTime": 0,
+        "earliestSuspendedTime": 0,
+        "expirationTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "hydrate": false,
+        "latestPendingTime": 0,
+        "latestPingedTime": 0,
+        "latestSuspendedTime": 0,
+        "nextExpirationTimeToWorkOn": 0,
+        "nextScheduledRoot": null,
+        "pendingChildren": null,
+        "pendingCommitExpirationTime": 0,
+        "pendingContext": null,
+        "pingCache": null,
+        "timeoutHandle": -1,
+      },
+      "tag": 3,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <Locations />,
+        },
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "sibling": null,
+    "stateNode": Locations {
+      "_reactInternalFiber": [Circular],
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "state": null,
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "tag": 1,
+    "type": [Function],
+    "updateQueue": null,
+  },
+}
+`;
