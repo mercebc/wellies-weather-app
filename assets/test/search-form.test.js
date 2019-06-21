@@ -3,8 +3,11 @@ import * as ReactDOM from 'react-dom'
 import { shallow, mount, render } from 'enzyme';
 
 import SearchForm from '../js/search-form';
-import ResultsTitle from '../js/results-list';
-const ReactTestRenderer = require('react-test-renderer');
+import { ResultsTitle } from '../js/results-list';
+import ReactTestRenderer from 'react-test-renderer';
+
+jest.mock('../js/httpClientWrapper');
+jest.mock('../js/api_key');
 
 test('renders the input field with placeholder', () => {
   const testInstance = ReactTestRenderer.create(
@@ -22,33 +25,21 @@ test('renders the search button', () => {
   expect(testInstance.findByType('button').children).toEqual(['Search']);
 });
 
-test('submits a form with London input', () => {
-    const searchQuery = 'London';
-    const onSearchSubmit = jest.fn();
-
-    const locationsInstance = shallow(<SearchForm />);
-  console.log(locationsInstance);
-
-    const formInstance = locationsInstance.findByType('form');
-    expect(formInstance).toBeDefined();
-
-    const eventMock = { preventDefault: jest.fn() };
-    formInstance.props.onSubmit(eventMock);
-
-    expect(onSearchSubmit).toHaveBeenCalledTimes(1);
-    expect(onSearchSubmit).toHaveBeenCalledWith(searchQuery);
-});
-
 test('shows results title for London', () => {
-    const searchQuery = 'London';
+  const searchQuery = 'London';
 
-    const locationsInstance = ReactTestRenderer.create((
-      <SearchForm value={searchQuery} />
-    )).root;
+  const wrapper = mount(<SearchForm />);
 
-    const formInstance = locationsInstance.findByType('form');
-    formInstance.props.onSubmit();
+  const form = wrapper.find('form');
+  form.simulate('submit');
 
-    const resultsInstance = locationsInstance.findByType(ResultsTitle);
-    expect(resultsInstance.findByProps({className: "results-title"}).children).toEqual(['Results for London']);
+  const event = {target: {value: searchQuery}}
+  wrapper.find('input').at(0).simulate('change', event)
+
+  console.log(event)
+
+  const resultsTitle = wrapper.find('ResultsTitle');
+  expect(resultsTitle.text()).toEqual('Results for London');
 });
+
+
