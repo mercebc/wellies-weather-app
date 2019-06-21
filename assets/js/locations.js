@@ -1,9 +1,9 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+
 import SearchForm from './search-form'
 
-export default class Locations extends React.Component{
-  render() {
+export default function Locations(props){
     return (
       <div className="container">
         <section className="phx-hero">
@@ -12,5 +12,4 @@ export default class Locations extends React.Component{
         <SearchForm />
       </div>
     )
-  }
 }
