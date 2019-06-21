@@ -23,13 +23,12 @@ export default class SearchForm extends React.Component{
 
   handleResult(event){
     event.preventDefault();
-    console.log("Im submitting the form");
     this.getLocations()
   }
 
   getLocations(){
     return request(this.state.city)
-      .then(result => this.setState({resultsList: result, resultError: false}))
+      .then(result => this.setState({resultsList: result, resultsError: false}))
       .catch(error => this.setState({resultsError: true}))
   }
 
@@ -47,8 +46,6 @@ export default class SearchForm extends React.Component{
 
   resultsTitle(){
     if (this.state.resultsError === false){
-      console.log(this.state.city);
-      console.log("now you see me");
       return <ResultsTitle city={this.state.city}></ResultsTitle>;
     }
   }
