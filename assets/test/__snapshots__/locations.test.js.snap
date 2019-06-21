@@ -228,7 +228,9 @@ ReactTestInstance {
                           Find out if you are going to need wellies in your town!
                         </p>
                       </section>,
-                      <SearchForm />,
+                      <SearchForm
+                        request={[Function]}
+                      />,
                     ],
                     "className": "container",
                   },
@@ -543,7 +545,9 @@ ReactTestInstance {
                                   Find out if you are going to need wellies in your town!
                                 </p>
                               </section>,
-                              <SearchForm />,
+                              <SearchForm
+                                request={[Function]}
+                              />,
                             ],
                             "className": "container",
                           },
@@ -703,7 +707,9 @@ ReactTestInstance {
                                 Find out if you are going to need wellies in your town!
                               </p>
                             </section>,
-                            <SearchForm />,
+                            <SearchForm
+                              request={[Function]}
+                            />,
                           ],
                           "className": "container",
                         },
@@ -874,7 +880,9 @@ ReactTestInstance {
                                   Find out if you are going to need wellies in your town!
                                 </p>
                               </section>,
-                              <SearchForm />,
+                              <SearchForm
+                                request={[Function]}
+                              />,
                             ],
                             "className": "container",
                           },
@@ -987,7 +995,9 @@ ReactTestInstance {
                                   Find out if you are going to need wellies in your town!
                                 </p>
                               </section>,
-                              <SearchForm />,
+                              <SearchForm
+                                request={[Function]}
+                              />,
                             ],
                             "className": "container",
                           },
@@ -1108,7 +1118,9 @@ ReactTestInstance {
                               Find out if you are going to need wellies in your town!
                             </p>
                           </section>,
-                          <SearchForm />,
+                          <SearchForm
+                            request={[Function]}
+                          />,
                         ],
                         "className": "container",
                       },
@@ -1258,7 +1270,9 @@ ReactTestInstance {
                                     Find out if you are going to need wellies in your town!
                                   </p>
                                 </section>,
-                                <SearchForm />,
+                                <SearchForm
+                                  request={[Function]}
+                                />,
                               ],
                               "className": "container",
                             },
@@ -1338,7 +1352,9 @@ ReactTestInstance {
                                     Find out if you are going to need wellies in your town!
                                   </p>
                                 </section>,
-                                <SearchForm />,
+                                <SearchForm
+                                  request={[Function]}
+                                />,
                               ],
                               "className": "container",
                             },
@@ -1426,7 +1442,9 @@ ReactTestInstance {
                                 Find out if you are going to need wellies in your town!
                               </p>
                             </section>,
-                            <SearchForm />,
+                            <SearchForm
+                              request={[Function]}
+                            />,
                           ],
                           "className": "container",
                         },
@@ -1519,7 +1537,9 @@ ReactTestInstance {
                             Find out if you are going to need wellies in your town!
                           </p>
                         </section>,
-                        <SearchForm />,
+                        <SearchForm
+                          request={[Function]}
+                        />,
                       ],
                       "className": "container",
                     },
@@ -1547,7 +1567,9 @@ ReactTestInstance {
           "index": 1,
           "key": null,
           "lastEffect": null,
-          "memoizedProps": Object {},
+          "memoizedProps": Object {
+            "request": [Function],
+          },
           "memoizedState": Object {
             "city": "",
             "resultsError": null,
@@ -1555,7 +1577,9 @@ ReactTestInstance {
           },
           "mode": 0,
           "nextEffect": null,
-          "pendingProps": Object {},
+          "pendingProps": Object {
+            "request": [Function],
+          },
           "ref": null,
           "return": [Circular],
           "sibling": null,
@@ -1563,8 +1587,11 @@ ReactTestInstance {
             "_reactInternalFiber": [Circular],
             "_reactInternalInstance": Object {},
             "context": Object {},
-            "props": Object {},
+            "props": Object {
+              "request": [Function],
+            },
             "refs": Object {},
+            "request": [Function],
             "state": Object {
               "city": "",
               "resultsError": null,
@@ -1708,7 +1735,9 @@ ReactTestInstance {
                             Find out if you are going to need wellies in your town!
                           </p>
                         </section>,
-                        <SearchForm />,
+                        <SearchForm
+                          request={[Function]}
+                        />,
                       ],
                       "className": "container",
                     },
@@ -1845,7 +1874,9 @@ ReactTestInstance {
                         Find out if you are going to need wellies in your town!
                       </p>
                     </section>,
-                    <SearchForm />,
+                    <SearchForm
+                      request={[Function]}
+                    />,
                   ],
                   "className": "container",
                 },
@@ -1884,7 +1915,9 @@ ReactTestInstance {
               Find out if you are going to need wellies in your town!
             </p>
           </section>,
-          <SearchForm />,
+          <SearchForm
+            request={[Function]}
+          />,
         ],
         "className": "container",
       },
@@ -1902,7 +1935,9 @@ ReactTestInstance {
               Find out if you are going to need wellies in your town!
             </p>
           </section>,
-          <SearchForm />,
+          <SearchForm
+            request={[Function]}
+          />,
         ],
         "className": "container",
       },
@@ -2087,7 +2122,9 @@ ReactTestInstance {
                 Find out if you are going to need wellies in your town!
               </p>
             </section>,
-            <SearchForm />,
+            <SearchForm
+              request={[Function]}
+            />,
           ],
           "className": "container",
         },
@@ -2296,7 +2333,9 @@ ReactTestInstance {
                         Find out if you are going to need wellies in your town!
                       </p>
                     </section>,
-                    <SearchForm />,
+                    <SearchForm
+                      request={[Function]}
+                    />,
                   ],
                   "className": "container",
                 },
@@ -2525,7 +2564,9 @@ ReactTestInstance {
                       Find out if you are going to need wellies in your town!
                     </p>
                   </section>,
-                  <SearchForm />,
+                  <SearchForm
+                    request={[Function]}
+                  />,
                 ],
                 "className": "container",
               },

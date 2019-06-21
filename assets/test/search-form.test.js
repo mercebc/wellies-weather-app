@@ -5,6 +5,7 @@ import { shallow, mount, render } from 'enzyme';
 import SearchForm from '../js/search-form';
 import { ResultsTitle } from '../js/results-list';
 import ReactTestRenderer from 'react-test-renderer';
+import request from '../js/request'
 
 jest.mock('../js/httpClientWrapper');
 jest.mock('../js/api_key');
@@ -27,7 +28,7 @@ test('renders the search button', () => {
 
 test('shows results title for London', (done) => {
   const searchQuery = 'London';
-  const wrapper = mount(<SearchForm />);
+  const wrapper = mount(<SearchForm request={request}/>);
 
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
@@ -43,7 +44,7 @@ test('shows results title for London', (done) => {
 
 test('shows results list for London', (done) => {
   const searchQuery = 'London';
-  const wrapper = mount(<SearchForm />);
+  const wrapper = mount(<SearchForm request={request}/>);
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
   const form = wrapper.find('form');
@@ -59,7 +60,7 @@ test('shows results list for London', (done) => {
 
 test('shows not city found banner', (done) => {
   const searchQuery = 'Lonsdkfjhs';
-  const wrapper = mount(<SearchForm />);
+  const wrapper = mount(<SearchForm request={request}/>);
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
   const form = wrapper.find('form');

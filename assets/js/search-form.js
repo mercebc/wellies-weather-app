@@ -3,11 +3,11 @@ import * as ReactDOM from 'react-dom'
 
 import { ResultsTitle, ResultsList } from '../js/results-list';
 import { NotFound, ServerError } from '../js/errors';
-import request from '../js/request'
 
 export default class SearchForm extends React.Component{
   constructor(props) {
     super(props);
+    this.request = this.props.request
     this.state = {
       city: "",
       resultsError: null,
@@ -27,7 +27,7 @@ export default class SearchForm extends React.Component{
   }
 
   getLocations(){
-    return request(this.state.city)
+    return this.request(this.state.city)
       .then(result => this.setState({resultsList: result, resultsError: false}))
       .catch(error => this.setState({resultsError: true}))
   }
