@@ -39,6 +39,7 @@ export default class SearchForm extends React.Component{
       if(this.state.resultsList.count > 0) {
         return <ResultsList locations={this.state.resultsList}></ResultsList>
       }else{
+      console.log(this.state)
         return <NotFound/>
       };
     }
@@ -55,6 +56,7 @@ export default class SearchForm extends React.Component{
       <section>
         <form className="flex" onSubmit={(event) => {this.handleResult(event)}}>
           <input
+            required
             className="margin-small"
             type="text"
             placeholder="Search..."
