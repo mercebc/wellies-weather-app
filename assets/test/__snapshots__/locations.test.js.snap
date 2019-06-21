@@ -134,7 +134,7 @@ ReactTestInstance {
                                 "onChange": [Function],
                                 "placeholder": "Search...",
                                 "type": "text",
-                                "value": "",
+                                "value": undefined,
                               },
                               "rootContainerInstance": [Circular],
                               "tag": "INSTANCE",
@@ -168,7 +168,6 @@ ReactTestInstance {
                                 onChange={[Function]}
                                 placeholder="Search..."
                                 type="text"
-                                value=""
                               />,
                               <button
                                 id="search"
@@ -198,7 +197,6 @@ ReactTestInstance {
                               onChange={[Function]}
                               placeholder="Search..."
                               type="text"
-                              value=""
                             />
                             <button
                               id="search"
@@ -207,7 +205,8 @@ ReactTestInstance {
                               Search
                             </button>
                           </form>,
-                          null,
+                          undefined,
+                          undefined,
                         ],
                       },
                       "rootContainerInstance": [Circular],
@@ -320,7 +319,7 @@ ReactTestInstance {
                   "onChange": [Function],
                   "placeholder": "Search...",
                   "type": "text",
-                  "value": "",
+                  "value": undefined,
                 },
                 "memoizedState": null,
                 "mode": 0,
@@ -331,7 +330,7 @@ ReactTestInstance {
                   "onChange": [Function],
                   "placeholder": "Search...",
                   "type": "text",
-                  "value": "",
+                  "value": undefined,
                 },
                 "ref": null,
                 "return": [Circular],
@@ -465,7 +464,7 @@ ReactTestInstance {
                                         "onChange": [Function],
                                         "placeholder": "Search...",
                                         "type": "text",
-                                        "value": "",
+                                        "value": undefined,
                                       },
                                       "rootContainerInstance": [Circular],
                                       "tag": "INSTANCE",
@@ -482,7 +481,6 @@ ReactTestInstance {
                                         onChange={[Function]}
                                         placeholder="Search..."
                                         type="text"
-                                        value=""
                                       />,
                                       <button
                                         id="search"
@@ -512,7 +510,6 @@ ReactTestInstance {
                                       onChange={[Function]}
                                       placeholder="Search..."
                                       type="text"
-                                      value=""
                                     />
                                     <button
                                       id="search"
@@ -521,7 +518,8 @@ ReactTestInstance {
                                       Search
                                     </button>
                                   </form>,
-                                  null,
+                                  undefined,
+                                  undefined,
                                 ],
                               },
                               "rootContainerInstance": [Circular],
@@ -569,7 +567,7 @@ ReactTestInstance {
                     "onChange": [Function],
                     "placeholder": "Search...",
                     "type": "text",
-                    "value": "",
+                    "value": undefined,
                   },
                   "rootContainerInstance": Object {
                     "children": Array [
@@ -641,7 +639,6 @@ ReactTestInstance {
                                       onChange={[Function]}
                                       placeholder="Search..."
                                       type="text"
-                                      value=""
                                     />,
                                     <button
                                       id="search"
@@ -671,7 +668,6 @@ ReactTestInstance {
                                     onChange={[Function]}
                                     placeholder="Search..."
                                     type="text"
-                                    value=""
                                   />
                                   <button
                                     id="search"
@@ -680,7 +676,8 @@ ReactTestInstance {
                                     Search
                                   </button>
                                 </form>,
-                                null,
+                                undefined,
+                                undefined,
                               ],
                             },
                             "rootContainerInstance": [Circular],
@@ -736,7 +733,6 @@ ReactTestInstance {
                     onChange={[Function]}
                     placeholder="Search..."
                     type="text"
-                    value=""
                   />,
                   <button
                     id="search"
@@ -759,7 +755,6 @@ ReactTestInstance {
                     onChange={[Function]}
                     placeholder="Search..."
                     type="text"
-                    value=""
                   />,
                   <button
                     id="search"
@@ -785,7 +780,7 @@ ReactTestInstance {
                       "onChange": [Function],
                       "placeholder": "Search...",
                       "type": "text",
-                      "value": "",
+                      "value": undefined,
                     },
                     "rootContainerInstance": Object {
                       "children": Array [
@@ -841,7 +836,6 @@ ReactTestInstance {
                                       onChange={[Function]}
                                       placeholder="Search..."
                                       type="text"
-                                      value=""
                                     />
                                     <button
                                       id="search"
@@ -850,7 +844,8 @@ ReactTestInstance {
                                       Search
                                     </button>
                                   </form>,
-                                  null,
+                                  undefined,
+                                  undefined,
                                 ],
                               },
                               "rootContainerInstance": [Circular],
@@ -953,7 +948,6 @@ ReactTestInstance {
                                       onChange={[Function]}
                                       placeholder="Search..."
                                       type="text"
-                                      value=""
                                     />
                                     <button
                                       id="search"
@@ -962,7 +956,8 @@ ReactTestInstance {
                                       Search
                                     </button>
                                   </form>,
-                                  null,
+                                  undefined,
+                                  undefined,
                                 ],
                               },
                               "rootContainerInstance": [Circular],
@@ -1007,7 +1002,6 @@ ReactTestInstance {
                       onChange={[Function]}
                       placeholder="Search..."
                       type="text"
-                      value=""
                     />,
                     <button
                       id="search"
@@ -1073,7 +1067,6 @@ ReactTestInstance {
                                   onChange={[Function]}
                                   placeholder="Search..."
                                   type="text"
-                                  value=""
                                 />
                                 <button
                                   id="search"
@@ -1082,7 +1075,8 @@ ReactTestInstance {
                                   Search
                                 </button>
                               </form>,
-                              null,
+                              undefined,
+                              undefined,
                             ],
                           },
                           "rootContainerInstance": [Circular],
@@ -1142,7 +1136,6 @@ ReactTestInstance {
                     onChange={[Function]}
                     placeholder="Search..."
                     type="text"
-                    value=""
                   />
                   <button
                     id="search"
@@ -1151,7 +1144,8 @@ ReactTestInstance {
                     Search
                   </button>
                 </form>,
-                null,
+                undefined,
+                undefined,
               ],
             },
             "memoizedState": null,
@@ -1169,7 +1163,6 @@ ReactTestInstance {
                     onChange={[Function]}
                     placeholder="Search..."
                     type="text"
-                    value=""
                   />
                   <button
                     id="search"
@@ -1178,7 +1171,8 @@ ReactTestInstance {
                     Search
                   </button>
                 </form>,
-                null,
+                undefined,
+                undefined,
               ],
             },
             "ref": null,
@@ -1197,7 +1191,7 @@ ReactTestInstance {
                         "onChange": [Function],
                         "placeholder": "Search...",
                         "type": "text",
-                        "value": "",
+                        "value": undefined,
                       },
                       "rootContainerInstance": Object {
                         "children": Array [
@@ -1355,7 +1349,6 @@ ReactTestInstance {
                         onChange={[Function]}
                         placeholder="Search..."
                         type="text"
-                        value=""
                       />,
                       <button
                         id="search"
@@ -1447,7 +1440,6 @@ ReactTestInstance {
                       onChange={[Function]}
                       placeholder="Search..."
                       type="text"
-                      value=""
                     />
                     <button
                       id="search"
@@ -1456,7 +1448,8 @@ ReactTestInstance {
                       Search
                     </button>
                   </form>,
-                  null,
+                  undefined,
+                  undefined,
                 ],
               },
               "rootContainerInstance": Object {
@@ -1541,7 +1534,8 @@ ReactTestInstance {
           "memoizedProps": Object {},
           "memoizedState": Object {
             "city": "",
-            "isSubmitted": false,
+            "resultsError": null,
+            "resultsList": null,
           },
           "mode": 0,
           "nextEffect": null,
@@ -1553,13 +1547,12 @@ ReactTestInstance {
             "_reactInternalFiber": [Circular],
             "_reactInternalInstance": Object {},
             "context": Object {},
-            "handleCity": [Function],
-            "handleResult": [Function],
             "props": Object {},
             "refs": Object {},
             "state": Object {
               "city": "",
-              "isSubmitted": false,
+              "resultsError": null,
+              "resultsList": null,
             },
             "updater": Object {
               "enqueueForceUpdate": [Function],
@@ -1605,7 +1598,7 @@ ReactTestInstance {
                                   "onChange": [Function],
                                   "placeholder": "Search...",
                                   "type": "text",
-                                  "value": "",
+                                  "value": undefined,
                                 },
                                 "rootContainerInstance": [Circular],
                                 "tag": "INSTANCE",
@@ -1639,7 +1632,6 @@ ReactTestInstance {
                                   onChange={[Function]}
                                   placeholder="Search..."
                                   type="text"
-                                  value=""
                                 />,
                                 <button
                                   id="search"
@@ -1669,7 +1661,6 @@ ReactTestInstance {
                                 onChange={[Function]}
                                 placeholder="Search..."
                                 type="text"
-                                value=""
                               />
                               <button
                                 id="search"
@@ -1678,7 +1669,8 @@ ReactTestInstance {
                                 Search
                               </button>
                             </form>,
-                            null,
+                            undefined,
+                            undefined,
                           ],
                         },
                         "rootContainerInstance": [Circular],
@@ -1741,7 +1733,7 @@ ReactTestInstance {
                               "onChange": [Function],
                               "placeholder": "Search...",
                               "type": "text",
-                              "value": "",
+                              "value": undefined,
                             },
                             "rootContainerInstance": [Circular],
                             "tag": "INSTANCE",
@@ -1775,7 +1767,6 @@ ReactTestInstance {
                               onChange={[Function]}
                               placeholder="Search..."
                               type="text"
-                              value=""
                             />,
                             <button
                               id="search"
@@ -1805,7 +1796,6 @@ ReactTestInstance {
                             onChange={[Function]}
                             placeholder="Search..."
                             type="text"
-                            value=""
                           />
                           <button
                             id="search"
@@ -1814,7 +1804,8 @@ ReactTestInstance {
                             Search
                           </button>
                         </form>,
-                        null,
+                        undefined,
+                        undefined,
                       ],
                     },
                     "rootContainerInstance": [Circular],
@@ -1958,7 +1949,7 @@ ReactTestInstance {
                       "onChange": [Function],
                       "placeholder": "Search...",
                       "type": "text",
-                      "value": "",
+                      "value": undefined,
                     },
                     "rootContainerInstance": Object {
                       "children": Array [
@@ -2004,7 +1995,6 @@ ReactTestInstance {
                       onChange={[Function]}
                       placeholder="Search..."
                       type="text"
-                      value=""
                     />,
                     <button
                       id="search"
@@ -2040,7 +2030,6 @@ ReactTestInstance {
                     onChange={[Function]}
                     placeholder="Search..."
                     type="text"
-                    value=""
                   />
                   <button
                     id="search"
@@ -2049,7 +2038,8 @@ ReactTestInstance {
                     Search
                   </button>
                 </form>,
-                null,
+                undefined,
+                undefined,
               ],
             },
             "rootContainerInstance": Object {
@@ -2190,7 +2180,7 @@ ReactTestInstance {
                               "onChange": [Function],
                               "placeholder": "Search...",
                               "type": "text",
-                              "value": "",
+                              "value": undefined,
                             },
                             "rootContainerInstance": [Circular],
                             "tag": "INSTANCE",
@@ -2224,7 +2214,6 @@ ReactTestInstance {
                               onChange={[Function]}
                               placeholder="Search..."
                               type="text"
-                              value=""
                             />,
                             <button
                               id="search"
@@ -2254,7 +2243,6 @@ ReactTestInstance {
                             onChange={[Function]}
                             placeholder="Search..."
                             type="text"
-                            value=""
                           />
                           <button
                             id="search"
@@ -2263,7 +2251,8 @@ ReactTestInstance {
                             Search
                           </button>
                         </form>,
-                        null,
+                        undefined,
+                        undefined,
                       ],
                     },
                     "rootContainerInstance": [Circular],
@@ -2418,7 +2407,7 @@ ReactTestInstance {
                             "onChange": [Function],
                             "placeholder": "Search...",
                             "type": "text",
-                            "value": "",
+                            "value": undefined,
                           },
                           "rootContainerInstance": [Circular],
                           "tag": "INSTANCE",
@@ -2452,7 +2441,6 @@ ReactTestInstance {
                             onChange={[Function]}
                             placeholder="Search..."
                             type="text"
-                            value=""
                           />,
                           <button
                             id="search"
@@ -2482,7 +2470,6 @@ ReactTestInstance {
                           onChange={[Function]}
                           placeholder="Search..."
                           type="text"
-                          value=""
                         />
                         <button
                           id="search"
@@ -2491,7 +2478,8 @@ ReactTestInstance {
                           Search
                         </button>
                       </form>,
-                      null,
+                      undefined,
+                      undefined,
                     ],
                   },
                   "rootContainerInstance": [Circular],
@@ -2560,21 +2548,8 @@ ReactTestInstance {
       },
     },
     "sibling": null,
-    "stateNode": Locations {
-      "_reactInternalFiber": [Circular],
-      "_reactInternalInstance": Object {},
-      "context": Object {},
-      "props": Object {},
-      "refs": Object {},
-      "state": null,
-      "updater": Object {
-        "enqueueForceUpdate": [Function],
-        "enqueueReplaceState": [Function],
-        "enqueueSetState": [Function],
-        "isMounted": [Function],
-      },
-    },
-    "tag": 1,
+    "stateNode": null,
+    "tag": 0,
     "type": [Function],
     "updateQueue": null,
   },

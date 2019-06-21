@@ -60,7 +60,7 @@ export default class SearchForm extends React.Component{
             type="text"
             placeholder="Search..."
             id="city"
-            value={this.state.city}
+            value={this.state.value}
             onChange={(event) => {this.handleCity(event)}}
           />
           <button
