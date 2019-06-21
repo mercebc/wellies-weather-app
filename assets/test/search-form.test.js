@@ -27,19 +27,41 @@ test('renders the search button', () => {
 
 test('shows results title for London', () => {
   const searchQuery = 'London';
-
   const wrapper = mount(<SearchForm />);
-
-  const form = wrapper.find('form');
-  form.simulate('submit');
 
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
+  const form = wrapper.find('form');
+  form.simulate('submit');
 
-  console.log(event)
 
-  const resultsTitle = wrapper.find('ResultsTitle');
+  console.log(wrapper.update().debug())
+
+  const resultsTitle = wrapper.update().find('.results-title');
   expect(resultsTitle.text()).toEqual('Results for London');
 });
 
+test('shows results list for London', () => {
+  const searchQuery = 'London';
+  const wrapper = mount(<SearchForm />);
+  const event = {target: {value: searchQuery}}
+  wrapper.find('input').at(0).simulate('change', event)
+  const form = wrapper.find('form');
+  form.simulate('submit');
+  const resultsList = wrapper.find('#locationsList');
+  const singleResult = resultsList.find('a').first().text();
 
+  expect(singleResult).toEqual('London, GB');
+});
+
+test('shows not city found banner', () => {
+  const searchQuery = 'Londonsdkfjhs';
+  const wrapper = mount(<SearchForm />);
+  const event = {target: {value: searchQuery}}
+  wrapper.find('input').at(0).simulate('change', event)
+  const form = wrapper.find('form');
+  form.simulate('submit');
+  const notFound = wrapper.find('#notFound');
+
+  expect(notFound.text()).toEqual('City not found');
+});

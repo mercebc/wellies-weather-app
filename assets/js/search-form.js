@@ -23,20 +23,20 @@ export default class SearchForm extends React.Component{
 
   handleResult(event){
     event.preventDefault();
+    console.log("Im submitting the form");
     this.getLocations()
   }
 
   getLocations(){
     return request(this.state.city)
-      .then(result => this.setState({resultsList: result}))
-      .then(result => this.setState({resultsError: false}))
+      .then(result => this.setState({resultsList: result, resultError: false}))
       .catch(error => this.setState({resultsError: true}))
   }
 
   resultsList(){
     if(this.state.resultsError){
         return <ServerError/>
-    }else if (this.state.resultsList != null){
+    }else if (this.state.resultsList !== null){
       if(this.state.resultsList.count > 0) {
         return <ResultsList locations={this.state.resultsList}></ResultsList>
       }else{
@@ -46,7 +46,9 @@ export default class SearchForm extends React.Component{
   }
 
   resultsTitle(){
-    if (this.state.resultsError == false){
+    if (this.state.resultsError === false){
+      console.log(this.state.city);
+      console.log("now you see me");
       return <ResultsTitle city={this.state.city}></ResultsTitle>;
     }
   }
