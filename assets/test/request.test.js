@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom'
-import request, {url} from '../js/request';
+import { request, url} from '../js/request';
 
 jest.mock('../js/httpClientWrapper');
 jest.mock('../js/api_key');

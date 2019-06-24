@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom'
 import { ResultsTitle, ResultsList } from '../js/results-list';
 import { NotFound, ServerError } from '../js/errors';
 
-export default class SearchForm extends React.Component{
+export class SearchForm extends React.Component{
   constructor(props) {
     super(props);
     this.request = this.props.request
@@ -39,7 +39,6 @@ export default class SearchForm extends React.Component{
       if(this.state.resultsList.count > 0) {
         return <ResultsList locations={this.state.resultsList}></ResultsList>
       }else{
-      console.log(this.state)
         return <NotFound/>
       };
     }

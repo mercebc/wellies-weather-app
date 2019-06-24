@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom'
-import { shallow, mount, render } from 'enzyme';
+import { mount } from 'enzyme';
+import  ReactTestRenderer from 'react-test-renderer';
 
-import SearchForm from '../js/search-form';
+import { SearchForm } from '../js/search-form';
 import { ResultsTitle } from '../js/results-list';
-import ReactTestRenderer from 'react-test-renderer';
-import request from '../js/request'
+import { request } from '../js/request'
 
 jest.mock('../js/httpClientWrapper');
 jest.mock('../js/api_key');

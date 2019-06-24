@@ -6,4 +6,4 @@ function createConnection(httpClientWrapper) {
  }
 }
 
-export default createConnection;
+export { createConnection };

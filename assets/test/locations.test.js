@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom'
 
-import Locations from '../js/locations';
+import { Locations } from '../js/locations';
 const ReactTestRenderer = require('react-test-renderer');
 
 test('render correctly Locations component', () => {

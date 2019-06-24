@@ -24,7 +24,7 @@ const result = (url) => {
   return (url.search("London") != -1) ? locationsResponse : notFoundResponse
 }
 
-export default function httpClientWrapper(url) {
+export function httpClientWrapper(url) {
   return Promise.resolve(result(url));
 }
 

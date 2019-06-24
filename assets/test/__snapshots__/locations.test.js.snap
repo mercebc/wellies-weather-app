@@ -133,6 +133,7 @@ ReactTestInstance {
                                 "id": "city",
                                 "onChange": [Function],
                                 "placeholder": "Search...",
+                                "required": true,
                                 "type": "text",
                                 "value": "",
                               },
@@ -167,6 +168,7 @@ ReactTestInstance {
                                 id="city"
                                 onChange={[Function]}
                                 placeholder="Search..."
+                                required={true}
                                 type="text"
                                 value=""
                               />,
@@ -197,6 +199,7 @@ ReactTestInstance {
                               id="city"
                               onChange={[Function]}
                               placeholder="Search..."
+                              required={true}
                               type="text"
                               value=""
                             />
@@ -322,6 +325,7 @@ ReactTestInstance {
                   "id": "city",
                   "onChange": [Function],
                   "placeholder": "Search...",
+                  "required": true,
                   "type": "text",
                   "value": "",
                 },
@@ -333,6 +337,7 @@ ReactTestInstance {
                   "id": "city",
                   "onChange": [Function],
                   "placeholder": "Search...",
+                  "required": true,
                   "type": "text",
                   "value": "",
                 },
@@ -467,6 +472,7 @@ ReactTestInstance {
                                         "id": "city",
                                         "onChange": [Function],
                                         "placeholder": "Search...",
+                                        "required": true,
                                         "type": "text",
                                         "value": "",
                                       },
@@ -484,6 +490,7 @@ ReactTestInstance {
                                         id="city"
                                         onChange={[Function]}
                                         placeholder="Search..."
+                                        required={true}
                                         type="text"
                                         value=""
                                       />,
@@ -514,6 +521,7 @@ ReactTestInstance {
                                       id="city"
                                       onChange={[Function]}
                                       placeholder="Search..."
+                                      required={true}
                                       type="text"
                                       value=""
                                     />
@@ -574,6 +582,7 @@ ReactTestInstance {
                     "id": "city",
                     "onChange": [Function],
                     "placeholder": "Search...",
+                    "required": true,
                     "type": "text",
                     "value": "",
                   },
@@ -646,6 +655,7 @@ ReactTestInstance {
                                       id="city"
                                       onChange={[Function]}
                                       placeholder="Search..."
+                                      required={true}
                                       type="text"
                                       value=""
                                     />,
@@ -676,6 +686,7 @@ ReactTestInstance {
                                     id="city"
                                     onChange={[Function]}
                                     placeholder="Search..."
+                                    required={true}
                                     type="text"
                                     value=""
                                   />
@@ -744,6 +755,7 @@ ReactTestInstance {
                     id="city"
                     onChange={[Function]}
                     placeholder="Search..."
+                    required={true}
                     type="text"
                     value=""
                   />,
@@ -767,6 +779,7 @@ ReactTestInstance {
                     id="city"
                     onChange={[Function]}
                     placeholder="Search..."
+                    required={true}
                     type="text"
                     value=""
                   />,
@@ -793,6 +806,7 @@ ReactTestInstance {
                       "id": "city",
                       "onChange": [Function],
                       "placeholder": "Search...",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
@@ -849,6 +863,7 @@ ReactTestInstance {
                                       id="city"
                                       onChange={[Function]}
                                       placeholder="Search..."
+                                      required={true}
                                       type="text"
                                       value=""
                                     />
@@ -964,6 +979,7 @@ ReactTestInstance {
                                       id="city"
                                       onChange={[Function]}
                                       placeholder="Search..."
+                                      required={true}
                                       type="text"
                                       value=""
                                     />
@@ -1021,6 +1037,7 @@ ReactTestInstance {
                       id="city"
                       onChange={[Function]}
                       placeholder="Search..."
+                      required={true}
                       type="text"
                       value=""
                     />,
@@ -1087,6 +1104,7 @@ ReactTestInstance {
                                   id="city"
                                   onChange={[Function]}
                                   placeholder="Search..."
+                                  required={true}
                                   type="text"
                                   value=""
                                 />
@@ -1159,6 +1177,7 @@ ReactTestInstance {
                     id="city"
                     onChange={[Function]}
                     placeholder="Search..."
+                    required={true}
                     type="text"
                     value=""
                   />
@@ -1187,6 +1206,7 @@ ReactTestInstance {
                     id="city"
                     onChange={[Function]}
                     placeholder="Search..."
+                    required={true}
                     type="text"
                     value=""
                   />
@@ -1216,6 +1236,7 @@ ReactTestInstance {
                         "id": "city",
                         "onChange": [Function],
                         "placeholder": "Search...",
+                        "required": true,
                         "type": "text",
                         "value": "",
                       },
@@ -1378,6 +1399,7 @@ ReactTestInstance {
                         id="city"
                         onChange={[Function]}
                         placeholder="Search..."
+                        required={true}
                         type="text"
                         value=""
                       />,
@@ -1472,6 +1494,7 @@ ReactTestInstance {
                       id="city"
                       onChange={[Function]}
                       placeholder="Search..."
+                      required={true}
                       type="text"
                       value=""
                     />
@@ -1640,6 +1663,7 @@ ReactTestInstance {
                                   "id": "city",
                                   "onChange": [Function],
                                   "placeholder": "Search...",
+                                  "required": true,
                                   "type": "text",
                                   "value": "",
                                 },
@@ -1674,6 +1698,7 @@ ReactTestInstance {
                                   id="city"
                                   onChange={[Function]}
                                   placeholder="Search..."
+                                  required={true}
                                   type="text"
                                   value=""
                                 />,
@@ -1704,6 +1729,7 @@ ReactTestInstance {
                                 id="city"
                                 onChange={[Function]}
                                 placeholder="Search..."
+                                required={true}
                                 type="text"
                                 value=""
                               />
@@ -1779,6 +1805,7 @@ ReactTestInstance {
                               "id": "city",
                               "onChange": [Function],
                               "placeholder": "Search...",
+                              "required": true,
                               "type": "text",
                               "value": "",
                             },
@@ -1813,6 +1840,7 @@ ReactTestInstance {
                               id="city"
                               onChange={[Function]}
                               placeholder="Search..."
+                              required={true}
                               type="text"
                               value=""
                             />,
@@ -1843,6 +1871,7 @@ ReactTestInstance {
                             id="city"
                             onChange={[Function]}
                             placeholder="Search..."
+                            required={true}
                             type="text"
                             value=""
                           />
@@ -2003,6 +2032,7 @@ ReactTestInstance {
                       "id": "city",
                       "onChange": [Function],
                       "placeholder": "Search...",
+                      "required": true,
                       "type": "text",
                       "value": "",
                     },
@@ -2049,6 +2079,7 @@ ReactTestInstance {
                       id="city"
                       onChange={[Function]}
                       placeholder="Search..."
+                      required={true}
                       type="text"
                       value=""
                     />,
@@ -2085,6 +2116,7 @@ ReactTestInstance {
                     id="city"
                     onChange={[Function]}
                     placeholder="Search..."
+                    required={true}
                     type="text"
                     value=""
                   />
@@ -2238,6 +2270,7 @@ ReactTestInstance {
                               "id": "city",
                               "onChange": [Function],
                               "placeholder": "Search...",
+                              "required": true,
                               "type": "text",
                               "value": "",
                             },
@@ -2272,6 +2305,7 @@ ReactTestInstance {
                               id="city"
                               onChange={[Function]}
                               placeholder="Search..."
+                              required={true}
                               type="text"
                               value=""
                             />,
@@ -2302,6 +2336,7 @@ ReactTestInstance {
                             id="city"
                             onChange={[Function]}
                             placeholder="Search..."
+                            required={true}
                             type="text"
                             value=""
                           />
@@ -2469,6 +2504,7 @@ ReactTestInstance {
                             "id": "city",
                             "onChange": [Function],
                             "placeholder": "Search...",
+                            "required": true,
                             "type": "text",
                             "value": "",
                           },
@@ -2503,6 +2539,7 @@ ReactTestInstance {
                             id="city"
                             onChange={[Function]}
                             placeholder="Search..."
+                            required={true}
                             type="text"
                             value=""
                           />,
@@ -2533,6 +2570,7 @@ ReactTestInstance {
                           id="city"
                           onChange={[Function]}
                           placeholder="Search..."
+                          required={true}
                           type="text"
                           value=""
                         />

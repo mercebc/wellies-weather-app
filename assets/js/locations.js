@@ -1,10 +1,10 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-import SearchForm from './search-form'
-import request from './request'
+import { SearchForm } from './search-form'
+import { request } from './request'
 
-export default function Locations(props){
+export function Locations(props){
     return (
       <div className="container">
         <section className="phx-hero">

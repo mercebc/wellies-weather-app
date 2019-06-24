@@ -1,6 +1,6 @@
 import css from "../css/app.css"
 import "phoenix_html"
-import Locations from "./locations"
+import { Locations } from "./locations"
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
