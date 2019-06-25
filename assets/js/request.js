@@ -1,4 +1,3 @@
-import { createHTTPClient } from './httpCLient';
 import { api_key } from './api_key';
 import { createConnection } from './httpClient';
 import { httpClientWrapper } from './httpClientWrapper';
