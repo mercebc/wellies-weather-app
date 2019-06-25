@@ -5,12 +5,12 @@ import { SearchForm } from './search-form'
 import { request } from './request'
 
 export function Locations(props){
-    return (
-      <div className="container">
-        <section className="phx-hero">
-          <p className="wellies-banner">Find out if you are going to need wellies in your town!</p>
-        </section>
-        <SearchForm request={request} />
-      </div>
-    )
+  return (
+    <div className="container">
+      <section className="phx-hero">
+        <p className="wellies-banner">Find out if you are going to need wellies in your town!</p>
+      </section>
+      <SearchForm request={request} />
+    </div>
+  )
 }

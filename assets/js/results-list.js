@@ -2,17 +2,17 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
 export function ResultsTitle(props){
-    return(
-      <p className="results-title">Results for {props.city}</p>
-    );
+  return(
+    <p className="results-title">Results for {props.city}</p>
+  );
 }
 
 export function SingleResult(props){
-    return(
-      <li className="item">
-        <a id={props.id} href={`/weather?id=${props.id}`}>{props.city}, {props.country}</a>
-      </li>
-    );
+  return(
+    <li className="item">
+      <a id={props.id} href={`/weather?id=${props.id}`}>{props.city}, {props.country}</a>
+    </li>
+  );
 }
 
 export class ResultsList extends React.Component{
@@ -29,17 +29,17 @@ export class ResultsList extends React.Component{
         city={city.name}
         country={city.sys.country}
       />
-     ))
+    ))
     );
   }
 
   render() {
-  return(
-    <section>
-      <ul id="locationsList">
-        {this.createResultList(this.props.locations)}
-      </ul>
-    </section>
-  )
+    return(
+      <section>
+        <ul id="locationsList">
+          {this.createResultList(this.props.locations)}
+        </ul>
+      </section>
+    )
   };
 }

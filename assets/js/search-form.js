@@ -34,7 +34,7 @@ export class SearchForm extends React.Component{
 
   resultsList(){
     if(this.state.resultsError){
-        return <ServerError/>
+      return <ServerError/>
     }else if (this.state.resultsList !== null){
       if(this.state.resultsList.count > 0) {
         return <ResultsList locations={this.state.resultsList}></ResultsList>
