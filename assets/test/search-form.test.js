@@ -5,10 +5,20 @@ import  ReactTestRenderer from 'react-test-renderer';
 
 import { SearchForm } from '../js/search-form';
 import { ResultsTitle } from '../js/results-list';
-import { request } from '../js/request'
+import { createHttpClient } from '../js/request'
+import { locations, notFound } from './fixtures/locations-data'
 
-jest.mock('../js/httpClientWrapper');
-jest.mock('../js/api_key');
+const locationsResponse = {
+  json() {
+    return Promise.resolve(locations);
+  },
+};
+
+const notFoundResponse = {
+  json() {
+    return Promise.resolve(notFound);
+  },
+};
 
 test('renders the input field with placeholder', () => {
   const testInstance = ReactTestRenderer.create(
@@ -27,8 +37,11 @@ test('renders the search button', () => {
 });
 
 test('shows results title for London', (done) => {
+  const mock = jest.fn().mockResolvedValue(locationsResponse);
+  const httpClient = createHttpClient(mock, 'key');
+
   const searchQuery = 'London';
-  const wrapper = mount(<SearchForm request={request}/>);
+  const wrapper = mount(<SearchForm httpClient={httpClient}/>);
 
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
@@ -43,8 +56,12 @@ test('shows results title for London', (done) => {
 });
 
 test('shows results list for London', (done) => {
+  const mock = jest.fn().mockResolvedValue(locationsResponse);
+  const httpClient = createHttpClient(mock, 'key');
+
   const searchQuery = 'London';
-  const wrapper = mount(<SearchForm request={request}/>);
+  const wrapper = mount(<SearchForm httpClient={httpClient}/>);
+
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
   const form = wrapper.find('form');
@@ -59,8 +76,12 @@ test('shows results list for London', (done) => {
 });
 
 test('shows not city found banner', (done) => {
+  const mock = jest.fn().mockResolvedValue(notFoundResponse);
+  const httpClient = createHttpClient(mock, 'key');
+
   const searchQuery = 'Lonsdkfjhs';
-  const wrapper = mount(<SearchForm request={request}/>);
+  const wrapper = mount(<SearchForm httpClient={httpClient}/>);
+
   const event = {target: {value: searchQuery}}
   wrapper.find('input').at(0).simulate('change', event)
   const form = wrapper.find('form');

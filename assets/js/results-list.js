@@ -22,7 +22,7 @@ export class ResultsList extends React.Component{
 
   createResultList(locations) {
     const cities = locations.list;
-    return (cities.map(city => (
+    return cities.map(city => (
       <SingleResult
         key={city.id}
         id={city.id}
@@ -30,14 +30,14 @@ export class ResultsList extends React.Component{
         country={city.sys.country}
       />
     ))
-    );
   }
 
   render() {
+    const { locations } = this.props;
     return(
       <section>
         <ul id="locationsList">
-          {this.createResultList(this.props.locations)}
+          {this.createResultList(locations)}
         </ul>
       </section>
     )

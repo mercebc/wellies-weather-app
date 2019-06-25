@@ -1,15 +1,14 @@
-import { api_key } from './api_key';
-import { createConnection } from './httpClient';
-import { httpClientWrapper } from './httpClientWrapper';
-
-const API_KEY = api_key;
 const API_ROOT = 'https://api.openweathermap.org/data/2.5';
 
-const connection = createConnection(httpClientWrapper);
+function url(city, apiKey) { return `${API_ROOT}/find?q=${city}&APPID=${apiKey}` };
 
-export function url(city) { return `${API_ROOT}/find?q=${city}&APPID=${API_KEY}` };
-
-export function request(city) {
-  const APIUrl = url(city);
-  return connection(APIUrl); //returns a promise
-};
+export function createHttpClient(client, apiKey) {
+  return {
+    searchCity: function(city) {
+      const APIUrl = url(city, apiKey);
+      return client(APIUrl)
+        .then(res => res.json())
+        .catch(error => console.log(error))
+    },
+  }
+}

@@ -1,30 +1,32 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom'
-import { request, url} from '../js/request';
+import * as ReactDOM from 'react-dom';
+import { createHttpClient } from '../js/request';
+import { locations } from './fixtures/locations-data'
 
-jest.mock('../js/httpClientWrapper');
-jest.mock('../js/api_key');
+const locationsResponse = {
+  json() {
+    return Promise.resolve(locations);
+  },
+};
 
-test("gets the url for London", () => {
-  const city = "London"
+test('builds the correct url', () => {
+  const apiKey = 'merce';
+  const city = 'London';
+  const mock = jest.fn().mockResolvedValue(locationsResponse);
+  const httpClient = createHttpClient(mock, apiKey);
 
-  expect(url(city)).toEqual("https://api.openweathermap.org/data/2.5/find?q=London&APPID=1234");
+  httpClient.searchCity(city);
+
+  expect(mock).toHaveBeenCalledWith('https://api.openweathermap.org/data/2.5/find?q=London&APPID=merce');
 });
 
-test("gets number of locations for London", (done) => {
-  const city = "London"
+test('gets locations from the api', (done) => {
+  const mock = jest.fn().mockResolvedValue(locationsResponse);
+  const httpClient = createHttpClient(mock, 'key');
 
-  request(city).then(res => {
-    expect(res.count).toEqual(5)
-    done()
-  })
-});
-
-test("gets zero locations if city not found", (done) => {
-  const city = "Londsdfs"
-
-  request(city).then(res => {
-    expect(res.count).toEqual(0)
-    done()
-  })
+  httpClient.searchCity('London').then(
+    (res) => { expect(res.list.length).toEqual(5);
+               done();
+    }
+  )
 });

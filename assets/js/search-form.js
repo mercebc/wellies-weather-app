@@ -7,12 +7,13 @@ import { NotFound, ServerError } from '../js/errors';
 export class SearchForm extends React.Component{
   constructor(props) {
     super(props);
-    this.request = this.props.request
     this.state = {
       city: "",
-      resultsError: null,
-      resultsList: null,
+      resultsError: false,
+      resultsList: [],
     }
+    this.handleCity = this.handleCity.bind(this);
+    this.handleResult = this.handleResult.bind(this);
   }
 
   handleCity(event){
@@ -26,26 +27,26 @@ export class SearchForm extends React.Component{
     this.getLocations()
   }
 
-  getLocations(){
-    return this.request(this.state.city)
+  getLocations() {
+    return this.props.httpClient.searchCity(this.state.city)
       .then(result => this.setState({resultsList: result, resultsError: false}))
       .catch(error => this.setState({resultsError: true}))
   }
 
-  resultsList(){
-    if(this.state.resultsError){
+  resultsList() {
+    if (this.state.resultsError) {
       return <ServerError/>
-    }else if (this.state.resultsList !== null){
+    } else if (this.state.resultsList.length !== 0){
       if(this.state.resultsList.count > 0) {
         return <ResultsList locations={this.state.resultsList}></ResultsList>
-      }else{
+      } else {
         return <NotFound/>
       };
     }
   }
 
   resultsTitle(){
-    if (this.state.resultsError === false){
+    if (this.state.resultsList.length !== 0){
       return <ResultsTitle city={this.state.city}></ResultsTitle>;
     }
   }
@@ -53,7 +54,7 @@ export class SearchForm extends React.Component{
   render(){
     return(
       <section>
-        <form className="flex" onSubmit={(event) => {this.handleResult(event)}}>
+        <form className="flex" onSubmit={this.handleResult}>
           <input
             required
             className="margin-small"
@@ -61,7 +62,7 @@ export class SearchForm extends React.Component{
             placeholder="Search..."
             id="city"
             value={this.state.city}
-            onChange={(event) => {this.handleCity(event)}}
+            onChange={this.handleCity}
           />
           <button
             type='submit'
