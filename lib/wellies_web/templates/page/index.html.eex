@@ -1,11 +1,1 @@
-<section class="phx-hero">
-  <p><br>Find out if you are going to need wellies in your town!<br/></p>
-</section>
-<div class='flex'>
-  <input class='margin-small' type='text' placeholder='Search...' id='city'>
-  <button type='button' id='search'>Search</button>
-</div>
-
-<section id="result">
-  <div id='resultsWrapper'></div>
-</section>
+<div id="react-app"></div>

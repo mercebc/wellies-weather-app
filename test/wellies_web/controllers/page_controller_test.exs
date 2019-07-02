@@ -6,8 +6,8 @@ defmodule WelliesWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "Wellies"
   end
 
-  test "renders the search box", %{conn: conn} do
+  test "renders the react app component", %{conn: conn} do
     conn = get(conn, "/")
-    assert html_response(conn, 200) =~ "id='search'"
+    assert html_response(conn, 200) =~ "id=\"react-app\""
   end
 end
