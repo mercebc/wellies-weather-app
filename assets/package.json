@@ -14,7 +14,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "babel-preset-react": "^6.24.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "react": "^16.8.6",
